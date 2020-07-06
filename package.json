@@ -5,7 +5,8 @@
     "packages/*"
   ],
   "scripts": {
-    "build": "lerna run build",
+    "build": "lerna run build --stream",
+    "deploy": "lerna run deploy --stream",
     "start": "lerna run start --stream"
   },
   "devDependencies": {
