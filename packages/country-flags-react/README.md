@@ -1,5 +1,7 @@
 # country-flags-react
 
+## ✨ [Demo Link] ✨
+
 - 1:1 aspect ratio flags
 - Zero custom webpack config
 - Lazily loads only the icons you need (via dynamic `import()`)
@@ -31,4 +33,5 @@ Flags used in this project are sourced from https://github.com/lipis/flag-icon-c
 
 ---
 
+[demo link]: https://petermikitsh.github.io/country-flags-react/
 [iso 3166-1-alpha-2]: https://www.iso.org/obp/ui/#search/code/
