@@ -2,7 +2,7 @@
 
 - 1:1 aspect ratio flags
 - Zero custom webpack config
-- Lazily loads only the icons you need (via dynamic `import`)
+- Lazily loads only the icons you need (via dynamic `import()`)
 - TypeScript definitions
 
 ## Usage
@@ -15,11 +15,15 @@ const MyApp () => (
 );
 ```
 
-| Prop Name   | Type     | Description                                       |
-| ----------- | -------- | ------------------------------------------------- |
-| countryCode | string   | [ISO 3166-1-alpha-2] country code                 |
-| size        | number   | Dimensions of flag, in pixels                     |
-| fallback    | React.FC | Component rendered when no valid country provided |
+| Prop Name   | Type            | Description                                       |
+| ----------- | --------------- | ------------------------------------------------- |
+| countryCode | string          | [ISO 3166-1-alpha-2] country code                 |
+| size        | number          | Dimensions of flag, in pixels                     |
+| fallback    | React.ReactNode | Component rendered when no valid country provided |
+
+## Distribution
+
+The output bundle is ES5 code with ES Module import/export syntax, plus dynamic `import()` syntax for loading flags.
 
 ## Prior Art
 

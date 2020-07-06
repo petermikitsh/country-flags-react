@@ -20,13 +20,24 @@
     "url": "https://github.com/petermikitsh/country-flags-react/issues"
   },
   "homepage": "https://github.com/petermikitsh/country-flags-react#readme",
+  "peerDependencies": {
+    "react": "*"
+  },
   "devDependencies": {
+    "@babel/core": "^7.10.4",
+    "@babel/plugin-transform-react-jsx": "^7.10.4",
+    "@babel/plugin-transform-runtime": "^7.10.4",
+    "@babel/preset-env": "^7.10.4",
     "@svgr/core": "^5.4.0",
     "@svgr/plugin-jsx": "^5.4.0",
     "@svgr/plugin-prettier": "^5.4.0",
     "@svgr/plugin-svgo": "^5.4.0",
     "flag-icon-css": "^3.5.0",
     "mz": "^2.7.0",
+    "prettier": "^2.0.5",
     "rimraf": "^3.0.2"
+  },
+  "dependencies": {
+    "@babel/runtime": "^7.10.4"
   }
 }

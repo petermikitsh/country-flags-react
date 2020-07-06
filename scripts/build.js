@@ -3,27 +3,8 @@
 const path = require("path");
 const fs = require("mz/fs");
 const { default: svgr } = require("@svgr/core");
-
-/* Default template uses es6 syntax.
- * https://react-svgr.com/docs/custom-templates/
- */
-const es5Template = function (
-  { template },
-  opts,
-  { componentName, props, jsx }
-) {
-  const plugins = ["jsx"];
-  if (opts.typescript) {
-    plugins.push("typescript");
-  }
-  const typeScriptTpl = template.smart({ plugins });
-  return typeScriptTpl.ast`const React = require('react');
-function ${componentName}(${props}) {
-  return ${jsx};
-}
-module.exports = ${componentName};
-  `;
-};
+const prettier = require("prettier");
+const babel = require("@babel/core");
 
 (async () => {
   const distFolder = path.resolve(__dirname, "..", "dist");
@@ -40,8 +21,8 @@ module.exports = ${componentName};
   const iconPkgJson = require.resolve("flag-icon-css/package.json");
   const iconRootDir = path.dirname(iconPkgJson);
   const flagsDir = path.resolve(iconRootDir, "flags", "1x1");
-  const flagFilenames = await fs.readdir(flagsDir);
-  const isoFlagFilenames = flagFilenames.filter((filename) =>
+  const flagFilenamesWithDupes = await fs.readdir(flagsDir);
+  const isoFlagFilenames = flagFilenamesWithDupes.filter((filename) =>
     filename.match(/^[a-zA-Z]{2}.svg/)
   );
 
@@ -57,14 +38,14 @@ module.exports = ${componentName};
       "flags",
       `${flagIsoCode}.js`
     );
-    svgr(
+    const jsCode = await svgr(
       flagFileContents,
       {
-        icon: true,
         svgProps: {
           focusable: false,
+          height: "24px",
+          width: "24px",
         },
-        template: es5Template,
         plugins: [
           "@svgr/plugin-svgo",
           "@svgr/plugin-jsx",
@@ -72,17 +53,25 @@ module.exports = ${componentName};
         ],
       },
       { componentName: flagIsoCode }
-    ).then((jsCode) => {
-      fs.writeFile(flagWritePath, jsCode);
+    );
+    const { code } = await babel.transformAsync(jsCode, {
+      plugins: [
+        "@babel/plugin-transform-react-jsx",
+        "@babel/plugin-transform-runtime",
+      ],
     });
+    return await fs.writeFile(flagWritePath, code);
   });
 
-  const isoCodesLower = flagFilenames.map((filename) =>
+  /*
+   * Create TypeScript interface.
+   */
+  const typedefFilepath = path.resolve(distFolder, "index.d.ts");
+  const isoCodesLower = isoFlagFilenames.map((filename) =>
     /[a-zA-Z]{2}/.exec(filename)[0].toLowerCase()
   );
   const isoCodesUpper = isoCodesLower.map((code) => code.toUpperCase());
   const isoLowerAndUpper = [...isoCodesLower, ...isoCodesUpper];
-  const typedefFilepath = path.resolve(distFolder, "index.d.ts");
 
   await fs.writeFile(
     typedefFilepath,
@@ -91,9 +80,71 @@ import * as React from 'react';
 interface FlagProps {
   countryCode: ${isoLowerAndUpper.map((code) => `"${code}"`).join(" | ")};
   size: number;
-  fallback: React.FC;
+  fallback: React.ReactNode;
 }
 export declare const Flag: React.FC<FlagProps>;
   `
   );
+
+  /*
+   * Create `Flag` react component.
+   */
+  const flagCode = `
+import * as React from 'react';
+
+const countryCodes = [${isoCodesUpper.map((code) => `"${code}"`).join(", ")}];
+
+const countryCodeFns = {
+  ${isoCodesUpper
+    .map((code) => `${code}: () => import('./flags/${code}.js')`)
+    .join(",")}
+};
+
+function Flag(props) {
+  const { countryCode, size, fallback } = props;
+  const upperCountryCode = countryCode.toUpperCase();
+  const [CountryFlag, setCountryFlag] = React.useState(null);
+
+  React.useEffect(() => {
+    countryCodeFns[name]().then((flag) => {
+      setCountryFlag(flag);
+    });
+  }, [countryCode]);
+
+  const invalidCountry = countryCodes.indexOf(upperCountryCode) === -1;
+
+  if (invalidCountry || !CountryFlag) {
+    return fallback || null;
+  }
+
+  if (size) {
+    return <CountryFlag height={size} width={size} />;
+  }
+
+  return <CountryFlag />;
+}
+
+export default Flag;
+  `;
+  const { code: babeledFlagCode } = await babel.transformAsync(flagCode, {
+    presets: [
+      [
+        "@babel/preset-env",
+        {
+          modules: false,
+          targets: "> 0.25%, not dead",
+        },
+      ],
+    ],
+    plugins: [
+      "@babel/plugin-transform-react-jsx",
+      "@babel/plugin-transform-runtime",
+    ],
+  });
+  const formattedBabeledFlagCode = prettier.format(babeledFlagCode, {
+    parser: "babel",
+    trailingComma: "none",
+  });
+  const indexFilepath = path.resolve(distFolder, "index.js");
+  return await fs.writeFile(indexFilepath, formattedBabeledFlagCode);
 })();
