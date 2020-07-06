@@ -1,0 +1,32 @@
+{
+  "name": "country-flags-react",
+  "version": "0.0.0",
+  "description": "Country flags for React",
+  "module": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "sideEffects": false,
+  "scripts": {
+    "clean": "rimraf dist",
+    "build": "node scripts/build.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/petermikitsh/country-flags-react.git"
+  },
+  "author": "Peter Mikitsh <peter.mikitsh@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/petermikitsh/country-flags-react/issues"
+  },
+  "homepage": "https://github.com/petermikitsh/country-flags-react#readme",
+  "devDependencies": {
+    "@svgr/core": "^5.4.0",
+    "@svgr/plugin-jsx": "^5.4.0",
+    "@svgr/plugin-prettier": "^5.4.0",
+    "@svgr/plugin-svgo": "^5.4.0",
+    "flag-icon-css": "^3.5.0",
+    "mz": "^2.7.0",
+    "rimraf": "^3.0.2"
+  }
+}
