@@ -1,43 +1,14 @@
 {
-  "name": "country-flags-react",
-  "version": "0.0.0",
-  "description": "Country flags for React",
-  "module": "dist/index.js",
-  "types": "dist/index.d.ts",
-  "sideEffects": false,
+  "name": "country-flags-react-root",
+  "private": true,
+  "workspaces": [
+    "packages/*"
+  ],
   "scripts": {
-    "clean": "rimraf dist",
-    "build": "node scripts/build.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/petermikitsh/country-flags-react.git"
-  },
-  "author": "Peter Mikitsh <peter.mikitsh@gmail.com>",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/petermikitsh/country-flags-react/issues"
-  },
-  "homepage": "https://github.com/petermikitsh/country-flags-react#readme",
-  "peerDependencies": {
-    "react": "*"
+    "build": "lerna run build",
+    "start": "lerna run start --stream"
   },
   "devDependencies": {
-    "@babel/core": "^7.10.4",
-    "@babel/plugin-transform-react-jsx": "^7.10.4",
-    "@babel/plugin-transform-runtime": "^7.10.4",
-    "@babel/preset-env": "^7.10.4",
-    "@svgr/core": "^5.4.0",
-    "@svgr/plugin-jsx": "^5.4.0",
-    "@svgr/plugin-prettier": "^5.4.0",
-    "@svgr/plugin-svgo": "^5.4.0",
-    "flag-icon-css": "^3.5.0",
-    "mz": "^2.7.0",
-    "prettier": "^2.0.5",
-    "rimraf": "^3.0.2"
-  },
-  "dependencies": {
-    "@babel/runtime": "^7.10.4"
+    "lerna": "^3.22.1"
   }
 }

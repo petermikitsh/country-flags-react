@@ -104,14 +104,17 @@ function Flag(props) {
   const { countryCode, size, fallback } = props;
   const upperCountryCode = countryCode.toUpperCase();
   const [CountryFlag, setCountryFlag] = React.useState(null);
+  const invalidCountry = countryCodes.indexOf(upperCountryCode) === -1;
 
   React.useEffect(() => {
-    countryCodeFns[name]().then((flag) => {
-      setCountryFlag(flag);
-    });
+    if (!invalidCountry) {
+      countryCodeFns[upperCountryCode]().then((flag) => {
+        setCountryFlag(() => flag.default);
+      });
+    }
   }, [countryCode]);
 
-  const invalidCountry = countryCodes.indexOf(upperCountryCode) === -1;
+  
 
   if (invalidCountry || !CountryFlag) {
     return fallback || null;

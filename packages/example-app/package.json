@@ -1,0 +1,25 @@
+{
+  "name": "example-app",
+  "private": true,
+  "version": "0.0.0",
+  "description": "Demo country-flags-react package",
+  "author": "Peter Mikitsh <peter.mikitsh@gmail.com>",
+  "homepage": "https://github.com/petermikitsh/country-flags-react#readme",
+  "license": "Unlicense",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/petermikitsh/country-flags-react.git"
+  },
+  "scripts": {
+    "start": "webpack-dev-server"
+  },
+  "devDependencies": {
+    "country-flags-react": "link:../country-flags-react",
+    "html-webpack-plugin": "^4.3.0",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "webpack": "^4.43.0",
+    "webpack-cli": "^3.3.12",
+    "webpack-dev-server": "^3.11.0"
+  }
+}
