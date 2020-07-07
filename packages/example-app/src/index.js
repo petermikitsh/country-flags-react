@@ -261,7 +261,7 @@ const codes = [
 ];
 
 const fallback = React.createElement("div", {
-  style: { height: "24px", width: "24px", display: "inline-block" },
+  style: { height: "40px", width: "40px", display: "inline-block" },
 });
 
 ReactDOM.render(
@@ -274,6 +274,7 @@ ReactDOM.render(
         key: code,
         countryCode: code,
         fallback: fallback,
+        size: 40,
       })
     ),
   ]),
