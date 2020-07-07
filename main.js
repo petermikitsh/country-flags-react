@@ -28854,11 +28854,12 @@ if (false) {} else {
 /*!********************************************!*\
   !*** ../country-flags-react/dist/index.js ***!
   \********************************************/
-/*! exports provided: default */
+/*! exports provided: Flag */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "Flag", function() { return Flag; });
 /* harmony import */ var _babel_runtime_helpers_slicedToArray__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime/helpers/slicedToArray */ "../../node_modules/@babel/runtime/helpers/slicedToArray.js");
 /* harmony import */ var _babel_runtime_helpers_slicedToArray__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_helpers_slicedToArray__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react */ "../../node_modules/react/index.js");
@@ -29878,7 +29879,7 @@ var countryCodeFns = {
   }
 };
 
-function Flag(props) {
+var Flag = function Flag(props) {
   var countryCode = props.countryCode,
     size = props.size,
     fallback = props.fallback;
@@ -29915,9 +29916,9 @@ function Flag(props) {
   }
 
   return /*#__PURE__*/ react__WEBPACK_IMPORTED_MODULE_1__["createElement"](CountryFlag, null);
-}
+};
 
-/* harmony default export */ __webpack_exports__["default"] = (Flag);
+
 
 
 /***/ }),
@@ -30203,19 +30204,26 @@ const fallback = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div
 });
 
 react_dom__WEBPACK_IMPORTED_MODULE_1___default.a.render(
-  codes.map((code) => [
-    react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(
-      react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment,
-      { key: code },
-      code,
-      react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(country_flags_react__WEBPACK_IMPORTED_MODULE_2__["default"], {
-        key: code,
-        countryCode: code,
-        fallback: fallback,
-        size: 40,
-      })
-    ),
-  ]),
+  react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(
+    "div",
+    null,
+    codes.map((code) =>
+      react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(
+        react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment,
+        { key: code },
+        react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(
+          "div",
+          { style: { lineHeight: "40px", display: "inline-block" } },
+          code
+        ),
+        react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(country_flags_react__WEBPACK_IMPORTED_MODULE_2__["Flag"], {
+          countryCode: code,
+          fallback: fallback,
+          size: 40,
+        })
+      )
+    )
+  ),
   mount
 );
 
