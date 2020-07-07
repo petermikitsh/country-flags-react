@@ -79,8 +79,8 @@ const babel = require("@babel/core");
 import * as React from 'react';
 interface FlagProps {
   countryCode: ${isoLowerAndUpper.map((code) => `"${code}"`).join(" | ")};
-  size: number;
-  fallback: React.ReactNode;
+  size?: number;
+  fallback?: React.ReactNode;
 }
 export declare const Flag: React.FC<FlagProps>;
   `
