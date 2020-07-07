@@ -100,7 +100,7 @@ const countryCodeFns = {
     .join(",")}
 };
 
-function Flag(props) {
+const Flag = (props) => {
   const { countryCode, size, fallback } = props;
   const upperCountryCode = countryCode.toUpperCase();
   const [CountryFlag, setCountryFlag] = React.useState(null);
@@ -127,7 +127,7 @@ function Flag(props) {
   return <CountryFlag />;
 }
 
-export default Flag;
+export { Flag };
   `;
   const { code: babeledFlagCode } = await babel.transformAsync(flagCode, {
     presets: [

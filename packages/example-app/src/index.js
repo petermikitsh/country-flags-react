@@ -1,6 +1,6 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import Flag from "country-flags-react";
+import { Flag } from "country-flags-react";
 
 const mount = document.createElement("div");
 document.body.appendChild(mount);
