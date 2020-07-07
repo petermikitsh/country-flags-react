@@ -265,18 +265,25 @@ const fallback = React.createElement("div", {
 });
 
 ReactDOM.render(
-  codes.map((code) => [
-    React.createElement(
-      React.Fragment,
-      { key: code },
-      code,
-      React.createElement(Flag, {
-        key: code,
-        countryCode: code,
-        fallback: fallback,
-        size: 40,
-      })
-    ),
-  ]),
+  React.createElement(
+    "div",
+    null,
+    codes.map((code) =>
+      React.createElement(
+        React.Fragment,
+        { key: code },
+        React.createElement(
+          "div",
+          { style: { lineHeight: "40px", display: "inline-block" } },
+          code
+        ),
+        React.createElement(Flag, {
+          countryCode: code,
+          fallback: fallback,
+          size: 40,
+        })
+      )
+    )
+  ),
   mount
 );
