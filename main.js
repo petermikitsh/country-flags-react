@@ -30199,7 +30199,7 @@ const codes = [
 ];
 
 const fallback = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-  style: { height: "24px", width: "24px", display: "inline-block" },
+  style: { height: "40px", width: "40px", display: "inline-block" },
 });
 
 react_dom__WEBPACK_IMPORTED_MODULE_1___default.a.render(
@@ -30212,6 +30212,7 @@ react_dom__WEBPACK_IMPORTED_MODULE_1___default.a.render(
         key: code,
         countryCode: code,
         fallback: fallback,
+        size: 40,
       })
     ),
   ]),
