@@ -7,6 +7,7 @@
   "scripts": {
     "build": "lerna run build --stream",
     "deploy": "lerna run deploy --stream",
+    "lerna:publish": "lerna publish from-git --conventional-commits --yes",
     "start": "lerna run start --stream"
   },
   "devDependencies": {
