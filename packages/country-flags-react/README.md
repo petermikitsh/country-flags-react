@@ -9,7 +9,7 @@
 
 ## Usage
 
-```tsx
+```jsx
 import { Flag } from "country-flags-react";
 
 const MyApp = () => <Flag countryCode="US" size={48} />;
