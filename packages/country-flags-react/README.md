@@ -10,11 +10,9 @@
 ## Usage
 
 ```tsx
-import { Flag } from 'country-flags-react';
+import { Flag } from "country-flags-react";
 
-const MyApp () => (
-  <Flag countryCode="US" size={48} />
-);
+const MyApp = () => <Flag countryCode="US" size={48} />;
 ```
 
 | Prop Name   | Type            | Description                                       |
