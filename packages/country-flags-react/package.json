@@ -21,7 +21,7 @@
   },
   "homepage": "https://github.com/petermikitsh/country-flags-react#readme",
   "peerDependencies": {
-    "react": "*"
+    "react": "^16.8.0"
   },
   "devDependencies": {
     "@babel/core": "^7.10.4",
