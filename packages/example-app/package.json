@@ -1,7 +1,7 @@
 {
   "name": "example-app",
   "private": true,
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Demo country-flags-react package",
   "author": "Peter Mikitsh <peter.mikitsh@gmail.com>",
   "homepage": "https://github.com/petermikitsh/country-flags-react#readme",
