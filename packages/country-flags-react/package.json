@@ -2,7 +2,7 @@
   "name": "country-flags-react",
   "version": "0.1.3",
   "description": "Country flags for React",
-  "module": "dist/index.js",
+  "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "sideEffects": false,
   "scripts": {
