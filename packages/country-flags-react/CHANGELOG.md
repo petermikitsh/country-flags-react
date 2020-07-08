@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.1.3](https://github.com/petermikitsh/country-flags-react/compare/v0.1.2...v0.1.3) (2020-07-08)
+
+
+### Bug Fixes
+
+* use commonjs modules ([6874d92](https://github.com/petermikitsh/country-flags-react/commit/6874d923c3c72e2dcaf7563442e1bebccbe4a404))
+
+
+
+
+
 ## [0.1.2](https://github.com/petermikitsh/country-flags-react/compare/v0.1.1...v0.1.2) (2020-07-07)
 
 
