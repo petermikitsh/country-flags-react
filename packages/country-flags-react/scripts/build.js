@@ -58,6 +58,7 @@ const babel = require("@babel/core");
       plugins: [
         "@babel/plugin-transform-react-jsx",
         "@babel/plugin-transform-runtime",
+        "@babel/plugin-transform-modules-commonjs",
       ],
     });
     return await fs.writeFile(flagWritePath, code);
@@ -142,6 +143,7 @@ export { Flag };
     plugins: [
       "@babel/plugin-transform-react-jsx",
       "@babel/plugin-transform-runtime",
+      "@babel/plugin-transform-modules-commonjs",
     ],
   });
   const formattedBabeledFlagCode = prettier.format(babeledFlagCode, {

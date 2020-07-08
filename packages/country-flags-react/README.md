@@ -23,7 +23,7 @@ const MyApp = () => <Flag countryCode="US" size={48} />;
 
 ## Distribution
 
-The output bundle is ES5 code with ES Module import/export syntax, plus dynamic `import()` syntax for loading flags.
+The output bundle is ES5 code with CommonJS `require()` syntax and dynamic `import()` syntax for loading flags.
 
 ## Prior Art
 
