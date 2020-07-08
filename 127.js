@@ -33,45 +33,52 @@ module.exports = _extends;
 /*!***********************************************!*\
   !*** ../country-flags-react/dist/flags/LB.js ***!
   \***********************************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _babel_runtime_helpers_extends__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime/helpers/extends */ "../../node_modules/@babel/runtime/helpers/extends.js");
-/* harmony import */ var _babel_runtime_helpers_extends__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_helpers_extends__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react */ "../../node_modules/react/index.js");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
 
 
+var _interopRequireWildcard = __webpack_require__(/*! @babel/runtime/helpers/interopRequireWildcard */ "../../node_modules/@babel/runtime/helpers/interopRequireWildcard.js");
+
+var _interopRequireDefault = __webpack_require__(/*! @babel/runtime/helpers/interopRequireDefault */ "../../node_modules/@babel/runtime/helpers/interopRequireDefault.js");
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = void 0;
+
+var _extends2 = _interopRequireDefault(__webpack_require__(/*! @babel/runtime/helpers/extends */ "../../node_modules/@babel/runtime/helpers/extends.js"));
+
+var React = _interopRequireWildcard(__webpack_require__(/*! react */ "../../node_modules/react/index.js"));
 
 function LB(props) {
-  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__["createElement"]("svg", _babel_runtime_helpers_extends__WEBPACK_IMPORTED_MODULE_0___default()({
+  return /*#__PURE__*/React.createElement("svg", (0, _extends2.default)({
     viewBox: "0 0 512 512",
     focusable: false,
     height: "24px",
     width: "24px"
-  }, props), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__["createElement"]("defs", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__["createElement"]("clipPath", {
+  }, props), /*#__PURE__*/React.createElement("defs", null, /*#__PURE__*/React.createElement("clipPath", {
     id: "prefix__a"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__["createElement"]("path", {
+  }, /*#__PURE__*/React.createElement("path", {
     fillOpacity: 0.7,
     d: "M124 0h496v496H124z"
-  }))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__["createElement"]("g", {
+  }))), /*#__PURE__*/React.createElement("g", {
     clipPath: "url(#prefix__a)",
     transform: "translate(-128) scale(1.0321)"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__["createElement"]("g", {
+  }, /*#__PURE__*/React.createElement("g", {
     fillRule: "evenodd",
     strokeWidth: "1pt"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__["createElement"]("path", {
+  }, /*#__PURE__*/React.createElement("path", {
     fill: "red",
     d: "M0 372h744v124H0zM0 0h744v124H0z"
-  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__["createElement"]("path", {
+  }), /*#__PURE__*/React.createElement("path", {
     fill: "#fff",
     d: "M0 124h744v248H0z"
-  })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__["createElement"]("path", {
+  })), /*#__PURE__*/React.createElement("path", {
     fill: "#007900",
     d: "M368.3 125.9c-7.6 15.1-12.7 15.1-25.3 25.2-5 5-12.6 7.5-2.5 12.6-10 5-15.1 7.5-20.2 17.6l2.6 2.5s9.5-4.7 10-2.5c1.7 2-12.6 9.7-14.4 11s-10.8 6.6-10.8 6.6c-12.6 10.1-20.2 7.6-27.7 22.7l25.2-2.5c5 17.6-12.6 20.1-25.2 27.7l-20.2 12.6c5 17.6 20.2 7.5 32.8 2.5l2.5 2.5v5L270 282s-29.8 17-30.3 17.6c-.2 1 0 5 0 5 10.1 2.6 25.2 5.1 35.3 0 12.6-5 15.2-10 30.3-10a97.4 97.4 0 01-50.5 20.2v10c15.2 0 25.3 0 37.9-2.5l32.8-10c7.5 0 15.1 7.5 12.6 15-7.6 27.7-37.8 22.7-48 45.4l40.4-15.1c10.1-5 20.2-10.1 32.8-7.6 15.1 5 15.1 15.1 35.3 20.1l-5-12.5c5 2.5 10 2.5 15.1 5 12.6 5 15.1 10 30.3 7.5-12.6-15-15.2-12.5-25.2-22.6-10.1-15.1-15.2-37.8 0-40.3l17.6 5c17.7 2.6 17.7-2.5 42.9 7.6 15.1 5 20.2 12.6 37.8 7.5-7.5-17.6-35.3-30.2-53-35.2 20.2-12.6 15.2 5 43-2.5v-5c-20.2-15.2-27.8-27.8-55.6-27.8l43-5v-5S447 235.7 446 235.3a6.3 6.3 0 014.1-4.4c8 5.2 32.3 4.6 33.7 4.5-.7-6.2-12.2-11.3-22.3-16.3 0 0-43.2-26.7-43.4-29 .8-6.8 17.7 1 35.8 6.3-5-10-15.1-15.1-25.2-17.6l15.1-2.5c-10-22.7-35.3-20.2-50.4-30.3-10.1-7.5-10.1-12.6-25.2-20.1z"
-  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__["createElement"]("path", {
+  }), /*#__PURE__*/React.createElement("path", {
     fill: "#fff",
     fillRule: "evenodd",
     stroke: "#fff",
@@ -82,7 +89,8 @@ function LB(props) {
   })));
 }
 
-/* harmony default export */ __webpack_exports__["default"] = (LB);
+var _default = LB;
+exports.default = _default;
 
 /***/ })
 

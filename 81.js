@@ -33,48 +33,55 @@ module.exports = _extends;
 /*!***********************************************!*\
   !*** ../country-flags-react/dist/flags/GG.js ***!
   \***********************************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _babel_runtime_helpers_extends__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime/helpers/extends */ "../../node_modules/@babel/runtime/helpers/extends.js");
-/* harmony import */ var _babel_runtime_helpers_extends__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_helpers_extends__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react */ "../../node_modules/react/index.js");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
 
 
+var _interopRequireWildcard = __webpack_require__(/*! @babel/runtime/helpers/interopRequireWildcard */ "../../node_modules/@babel/runtime/helpers/interopRequireWildcard.js");
+
+var _interopRequireDefault = __webpack_require__(/*! @babel/runtime/helpers/interopRequireDefault */ "../../node_modules/@babel/runtime/helpers/interopRequireDefault.js");
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = void 0;
+
+var _extends2 = _interopRequireDefault(__webpack_require__(/*! @babel/runtime/helpers/extends */ "../../node_modules/@babel/runtime/helpers/extends.js"));
+
+var React = _interopRequireWildcard(__webpack_require__(/*! react */ "../../node_modules/react/index.js"));
 
 function GG(props) {
-  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__["createElement"]("svg", _babel_runtime_helpers_extends__WEBPACK_IMPORTED_MODULE_0___default()({
+  return /*#__PURE__*/React.createElement("svg", (0, _extends2.default)({
     viewBox: "0 0 512 512",
     focusable: false,
     height: "24px",
     width: "24px"
-  }, props), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__["createElement"]("path", {
+  }, props), /*#__PURE__*/React.createElement("path", {
     fill: "#fff",
     d: "M0 0h512v512H0z"
-  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__["createElement"]("path", {
+  }), /*#__PURE__*/React.createElement("path", {
     fill: "#e8112d",
     d: "M192 0h128v512H192z"
-  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__["createElement"]("path", {
+  }), /*#__PURE__*/React.createElement("path", {
     fill: "#e8112d",
     d: "M0 187.7h512v136.6H0z"
-  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__["createElement"]("path", {
+  }), /*#__PURE__*/React.createElement("path", {
     id: "prefix__a",
     fill: "#f9dd16",
     d: "M46 305.8l23.3-25h210v-49.7h-210L46 206.2z"
-  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__["createElement"]("use", {
+  }), /*#__PURE__*/React.createElement("use", {
     width: 36,
     height: 24,
     transform: "matrix(0 1.06667 -.9375 0 496 -17)",
     xlinkHref: "#prefix__a"
-  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__["createElement"]("use", {
+  }), /*#__PURE__*/React.createElement("use", {
     width: 36,
     height: 24,
     transform: "matrix(0 -1.06667 .9375 0 16 529)",
     xlinkHref: "#prefix__a"
-  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__["createElement"]("use", {
+  }), /*#__PURE__*/React.createElement("use", {
     width: 36,
     height: 24,
     transform: "rotate(180 256 256)",
@@ -82,7 +89,8 @@ function GG(props) {
   }));
 }
 
-/* harmony default export */ __webpack_exports__["default"] = (GG);
+var _default = GG;
+exports.default = _default;
 
 /***/ })
 

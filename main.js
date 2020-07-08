@@ -237,6 +237,88 @@ module.exports = _arrayWithHoles;
 
 /***/ }),
 
+/***/ "../../node_modules/@babel/runtime/helpers/interopRequireDefault.js":
+/*!************************************************************************************************************!*\
+  !*** /Users/pmikitsh/git/country-flags-react/node_modules/@babel/runtime/helpers/interopRequireDefault.js ***!
+  \************************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+function _interopRequireDefault(obj) {
+  return obj && obj.__esModule ? obj : {
+    "default": obj
+  };
+}
+
+module.exports = _interopRequireDefault;
+
+/***/ }),
+
+/***/ "../../node_modules/@babel/runtime/helpers/interopRequireWildcard.js":
+/*!*************************************************************************************************************!*\
+  !*** /Users/pmikitsh/git/country-flags-react/node_modules/@babel/runtime/helpers/interopRequireWildcard.js ***!
+  \*************************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+var _typeof = __webpack_require__(/*! ../helpers/typeof */ "../../node_modules/@babel/runtime/helpers/typeof.js");
+
+function _getRequireWildcardCache() {
+  if (typeof WeakMap !== "function") return null;
+  var cache = new WeakMap();
+
+  _getRequireWildcardCache = function _getRequireWildcardCache() {
+    return cache;
+  };
+
+  return cache;
+}
+
+function _interopRequireWildcard(obj) {
+  if (obj && obj.__esModule) {
+    return obj;
+  }
+
+  if (obj === null || _typeof(obj) !== "object" && typeof obj !== "function") {
+    return {
+      "default": obj
+    };
+  }
+
+  var cache = _getRequireWildcardCache();
+
+  if (cache && cache.has(obj)) {
+    return cache.get(obj);
+  }
+
+  var newObj = {};
+  var hasPropertyDescriptor = Object.defineProperty && Object.getOwnPropertyDescriptor;
+
+  for (var key in obj) {
+    if (Object.prototype.hasOwnProperty.call(obj, key)) {
+      var desc = hasPropertyDescriptor ? Object.getOwnPropertyDescriptor(obj, key) : null;
+
+      if (desc && (desc.get || desc.set)) {
+        Object.defineProperty(newObj, key, desc);
+      } else {
+        newObj[key] = obj[key];
+      }
+    }
+  }
+
+  newObj["default"] = obj;
+
+  if (cache) {
+    cache.set(obj, newObj);
+  }
+
+  return newObj;
+}
+
+module.exports = _interopRequireWildcard;
+
+/***/ }),
+
 /***/ "../../node_modules/@babel/runtime/helpers/iterableToArrayLimit.js":
 /*!***********************************************************************************************************!*\
   !*** /Users/pmikitsh/git/country-flags-react/node_modules/@babel/runtime/helpers/iterableToArrayLimit.js ***!
@@ -310,6 +392,33 @@ function _slicedToArray(arr, i) {
 }
 
 module.exports = _slicedToArray;
+
+/***/ }),
+
+/***/ "../../node_modules/@babel/runtime/helpers/typeof.js":
+/*!*********************************************************************************************!*\
+  !*** /Users/pmikitsh/git/country-flags-react/node_modules/@babel/runtime/helpers/typeof.js ***!
+  \*********************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+function _typeof(obj) {
+  "@babel/helpers - typeof";
+
+  if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") {
+    module.exports = _typeof = function _typeof(obj) {
+      return typeof obj;
+    };
+  } else {
+    module.exports = _typeof = function _typeof(obj) {
+      return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj;
+    };
+  }
+
+  return _typeof(obj);
+}
+
+module.exports = _typeof;
 
 /***/ }),
 
@@ -28854,17 +28963,26 @@ if (false) {} else {
 /*!********************************************!*\
   !*** ../country-flags-react/dist/index.js ***!
   \********************************************/
-/*! exports provided: Flag */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "Flag", function() { return Flag; });
-/* harmony import */ var _babel_runtime_helpers_slicedToArray__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime/helpers/slicedToArray */ "../../node_modules/@babel/runtime/helpers/slicedToArray.js");
-/* harmony import */ var _babel_runtime_helpers_slicedToArray__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_helpers_slicedToArray__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react */ "../../node_modules/react/index.js");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
 
+
+var _interopRequireWildcard = __webpack_require__(/*! @babel/runtime/helpers/interopRequireWildcard */ "../../node_modules/@babel/runtime/helpers/interopRequireWildcard.js");
+
+var _interopRequireDefault = __webpack_require__(/*! @babel/runtime/helpers/interopRequireDefault */ "../../node_modules/@babel/runtime/helpers/interopRequireDefault.js");
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.Flag = void 0;
+
+var _slicedToArray2 = _interopRequireDefault(
+  __webpack_require__(/*! @babel/runtime/helpers/slicedToArray */ "../../node_modules/@babel/runtime/helpers/slicedToArray.js")
+);
+
+var React = _interopRequireWildcard(__webpack_require__(/*! react */ "../../node_modules/react/index.js"));
 
 var countryCodes = [
   "AD",
@@ -29122,760 +29240,760 @@ var countryCodes = [
 ];
 var countryCodeFns = {
   AD: function AD() {
-    return __webpack_require__.e(/*! import() */ 0).then(__webpack_require__.bind(null, /*! ./flags/AD.js */ "../country-flags-react/dist/flags/AD.js"));
+    return __webpack_require__.e(/*! import() */ 0).then(__webpack_require__.t.bind(null, /*! ./flags/AD.js */ "../country-flags-react/dist/flags/AD.js", 7));
   },
   AE: function AE() {
-    return __webpack_require__.e(/*! import() */ 1).then(__webpack_require__.bind(null, /*! ./flags/AE.js */ "../country-flags-react/dist/flags/AE.js"));
+    return __webpack_require__.e(/*! import() */ 1).then(__webpack_require__.t.bind(null, /*! ./flags/AE.js */ "../country-flags-react/dist/flags/AE.js", 7));
   },
   AF: function AF() {
-    return __webpack_require__.e(/*! import() */ 2).then(__webpack_require__.bind(null, /*! ./flags/AF.js */ "../country-flags-react/dist/flags/AF.js"));
+    return __webpack_require__.e(/*! import() */ 2).then(__webpack_require__.t.bind(null, /*! ./flags/AF.js */ "../country-flags-react/dist/flags/AF.js", 7));
   },
   AG: function AG() {
-    return __webpack_require__.e(/*! import() */ 3).then(__webpack_require__.bind(null, /*! ./flags/AG.js */ "../country-flags-react/dist/flags/AG.js"));
+    return __webpack_require__.e(/*! import() */ 3).then(__webpack_require__.t.bind(null, /*! ./flags/AG.js */ "../country-flags-react/dist/flags/AG.js", 7));
   },
   AI: function AI() {
-    return __webpack_require__.e(/*! import() */ 4).then(__webpack_require__.bind(null, /*! ./flags/AI.js */ "../country-flags-react/dist/flags/AI.js"));
+    return __webpack_require__.e(/*! import() */ 4).then(__webpack_require__.t.bind(null, /*! ./flags/AI.js */ "../country-flags-react/dist/flags/AI.js", 7));
   },
   AL: function AL() {
-    return __webpack_require__.e(/*! import() */ 5).then(__webpack_require__.bind(null, /*! ./flags/AL.js */ "../country-flags-react/dist/flags/AL.js"));
+    return __webpack_require__.e(/*! import() */ 5).then(__webpack_require__.t.bind(null, /*! ./flags/AL.js */ "../country-flags-react/dist/flags/AL.js", 7));
   },
   AM: function AM() {
-    return __webpack_require__.e(/*! import() */ 6).then(__webpack_require__.bind(null, /*! ./flags/AM.js */ "../country-flags-react/dist/flags/AM.js"));
+    return __webpack_require__.e(/*! import() */ 6).then(__webpack_require__.t.bind(null, /*! ./flags/AM.js */ "../country-flags-react/dist/flags/AM.js", 7));
   },
   AO: function AO() {
-    return __webpack_require__.e(/*! import() */ 7).then(__webpack_require__.bind(null, /*! ./flags/AO.js */ "../country-flags-react/dist/flags/AO.js"));
+    return __webpack_require__.e(/*! import() */ 7).then(__webpack_require__.t.bind(null, /*! ./flags/AO.js */ "../country-flags-react/dist/flags/AO.js", 7));
   },
   AQ: function AQ() {
-    return __webpack_require__.e(/*! import() */ 8).then(__webpack_require__.bind(null, /*! ./flags/AQ.js */ "../country-flags-react/dist/flags/AQ.js"));
+    return __webpack_require__.e(/*! import() */ 8).then(__webpack_require__.t.bind(null, /*! ./flags/AQ.js */ "../country-flags-react/dist/flags/AQ.js", 7));
   },
   AR: function AR() {
-    return __webpack_require__.e(/*! import() */ 9).then(__webpack_require__.bind(null, /*! ./flags/AR.js */ "../country-flags-react/dist/flags/AR.js"));
+    return __webpack_require__.e(/*! import() */ 9).then(__webpack_require__.t.bind(null, /*! ./flags/AR.js */ "../country-flags-react/dist/flags/AR.js", 7));
   },
   AS: function AS() {
-    return __webpack_require__.e(/*! import() */ 10).then(__webpack_require__.bind(null, /*! ./flags/AS.js */ "../country-flags-react/dist/flags/AS.js"));
+    return __webpack_require__.e(/*! import() */ 10).then(__webpack_require__.t.bind(null, /*! ./flags/AS.js */ "../country-flags-react/dist/flags/AS.js", 7));
   },
   AT: function AT() {
-    return __webpack_require__.e(/*! import() */ 11).then(__webpack_require__.bind(null, /*! ./flags/AT.js */ "../country-flags-react/dist/flags/AT.js"));
+    return __webpack_require__.e(/*! import() */ 11).then(__webpack_require__.t.bind(null, /*! ./flags/AT.js */ "../country-flags-react/dist/flags/AT.js", 7));
   },
   AU: function AU() {
-    return __webpack_require__.e(/*! import() */ 12).then(__webpack_require__.bind(null, /*! ./flags/AU.js */ "../country-flags-react/dist/flags/AU.js"));
+    return __webpack_require__.e(/*! import() */ 12).then(__webpack_require__.t.bind(null, /*! ./flags/AU.js */ "../country-flags-react/dist/flags/AU.js", 7));
   },
   AW: function AW() {
-    return __webpack_require__.e(/*! import() */ 13).then(__webpack_require__.bind(null, /*! ./flags/AW.js */ "../country-flags-react/dist/flags/AW.js"));
+    return __webpack_require__.e(/*! import() */ 13).then(__webpack_require__.t.bind(null, /*! ./flags/AW.js */ "../country-flags-react/dist/flags/AW.js", 7));
   },
   AX: function AX() {
-    return __webpack_require__.e(/*! import() */ 14).then(__webpack_require__.bind(null, /*! ./flags/AX.js */ "../country-flags-react/dist/flags/AX.js"));
+    return __webpack_require__.e(/*! import() */ 14).then(__webpack_require__.t.bind(null, /*! ./flags/AX.js */ "../country-flags-react/dist/flags/AX.js", 7));
   },
   AZ: function AZ() {
-    return __webpack_require__.e(/*! import() */ 15).then(__webpack_require__.bind(null, /*! ./flags/AZ.js */ "../country-flags-react/dist/flags/AZ.js"));
+    return __webpack_require__.e(/*! import() */ 15).then(__webpack_require__.t.bind(null, /*! ./flags/AZ.js */ "../country-flags-react/dist/flags/AZ.js", 7));
   },
   BA: function BA() {
-    return __webpack_require__.e(/*! import() */ 16).then(__webpack_require__.bind(null, /*! ./flags/BA.js */ "../country-flags-react/dist/flags/BA.js"));
+    return __webpack_require__.e(/*! import() */ 16).then(__webpack_require__.t.bind(null, /*! ./flags/BA.js */ "../country-flags-react/dist/flags/BA.js", 7));
   },
   BB: function BB() {
-    return __webpack_require__.e(/*! import() */ 17).then(__webpack_require__.bind(null, /*! ./flags/BB.js */ "../country-flags-react/dist/flags/BB.js"));
+    return __webpack_require__.e(/*! import() */ 17).then(__webpack_require__.t.bind(null, /*! ./flags/BB.js */ "../country-flags-react/dist/flags/BB.js", 7));
   },
   BD: function BD() {
-    return __webpack_require__.e(/*! import() */ 18).then(__webpack_require__.bind(null, /*! ./flags/BD.js */ "../country-flags-react/dist/flags/BD.js"));
+    return __webpack_require__.e(/*! import() */ 18).then(__webpack_require__.t.bind(null, /*! ./flags/BD.js */ "../country-flags-react/dist/flags/BD.js", 7));
   },
   BE: function BE() {
-    return __webpack_require__.e(/*! import() */ 19).then(__webpack_require__.bind(null, /*! ./flags/BE.js */ "../country-flags-react/dist/flags/BE.js"));
+    return __webpack_require__.e(/*! import() */ 19).then(__webpack_require__.t.bind(null, /*! ./flags/BE.js */ "../country-flags-react/dist/flags/BE.js", 7));
   },
   BF: function BF() {
-    return __webpack_require__.e(/*! import() */ 20).then(__webpack_require__.bind(null, /*! ./flags/BF.js */ "../country-flags-react/dist/flags/BF.js"));
+    return __webpack_require__.e(/*! import() */ 20).then(__webpack_require__.t.bind(null, /*! ./flags/BF.js */ "../country-flags-react/dist/flags/BF.js", 7));
   },
   BG: function BG() {
-    return __webpack_require__.e(/*! import() */ 21).then(__webpack_require__.bind(null, /*! ./flags/BG.js */ "../country-flags-react/dist/flags/BG.js"));
+    return __webpack_require__.e(/*! import() */ 21).then(__webpack_require__.t.bind(null, /*! ./flags/BG.js */ "../country-flags-react/dist/flags/BG.js", 7));
   },
   BH: function BH() {
-    return __webpack_require__.e(/*! import() */ 22).then(__webpack_require__.bind(null, /*! ./flags/BH.js */ "../country-flags-react/dist/flags/BH.js"));
+    return __webpack_require__.e(/*! import() */ 22).then(__webpack_require__.t.bind(null, /*! ./flags/BH.js */ "../country-flags-react/dist/flags/BH.js", 7));
   },
   BI: function BI() {
-    return __webpack_require__.e(/*! import() */ 23).then(__webpack_require__.bind(null, /*! ./flags/BI.js */ "../country-flags-react/dist/flags/BI.js"));
+    return __webpack_require__.e(/*! import() */ 23).then(__webpack_require__.t.bind(null, /*! ./flags/BI.js */ "../country-flags-react/dist/flags/BI.js", 7));
   },
   BJ: function BJ() {
-    return __webpack_require__.e(/*! import() */ 24).then(__webpack_require__.bind(null, /*! ./flags/BJ.js */ "../country-flags-react/dist/flags/BJ.js"));
+    return __webpack_require__.e(/*! import() */ 24).then(__webpack_require__.t.bind(null, /*! ./flags/BJ.js */ "../country-flags-react/dist/flags/BJ.js", 7));
   },
   BL: function BL() {
-    return __webpack_require__.e(/*! import() */ 25).then(__webpack_require__.bind(null, /*! ./flags/BL.js */ "../country-flags-react/dist/flags/BL.js"));
+    return __webpack_require__.e(/*! import() */ 25).then(__webpack_require__.t.bind(null, /*! ./flags/BL.js */ "../country-flags-react/dist/flags/BL.js", 7));
   },
   BM: function BM() {
-    return __webpack_require__.e(/*! import() */ 26).then(__webpack_require__.bind(null, /*! ./flags/BM.js */ "../country-flags-react/dist/flags/BM.js"));
+    return __webpack_require__.e(/*! import() */ 26).then(__webpack_require__.t.bind(null, /*! ./flags/BM.js */ "../country-flags-react/dist/flags/BM.js", 7));
   },
   BN: function BN() {
-    return __webpack_require__.e(/*! import() */ 27).then(__webpack_require__.bind(null, /*! ./flags/BN.js */ "../country-flags-react/dist/flags/BN.js"));
+    return __webpack_require__.e(/*! import() */ 27).then(__webpack_require__.t.bind(null, /*! ./flags/BN.js */ "../country-flags-react/dist/flags/BN.js", 7));
   },
   BO: function BO() {
-    return __webpack_require__.e(/*! import() */ 28).then(__webpack_require__.bind(null, /*! ./flags/BO.js */ "../country-flags-react/dist/flags/BO.js"));
+    return __webpack_require__.e(/*! import() */ 28).then(__webpack_require__.t.bind(null, /*! ./flags/BO.js */ "../country-flags-react/dist/flags/BO.js", 7));
   },
   BQ: function BQ() {
-    return __webpack_require__.e(/*! import() */ 29).then(__webpack_require__.bind(null, /*! ./flags/BQ.js */ "../country-flags-react/dist/flags/BQ.js"));
+    return __webpack_require__.e(/*! import() */ 29).then(__webpack_require__.t.bind(null, /*! ./flags/BQ.js */ "../country-flags-react/dist/flags/BQ.js", 7));
   },
   BR: function BR() {
-    return __webpack_require__.e(/*! import() */ 30).then(__webpack_require__.bind(null, /*! ./flags/BR.js */ "../country-flags-react/dist/flags/BR.js"));
+    return __webpack_require__.e(/*! import() */ 30).then(__webpack_require__.t.bind(null, /*! ./flags/BR.js */ "../country-flags-react/dist/flags/BR.js", 7));
   },
   BS: function BS() {
-    return __webpack_require__.e(/*! import() */ 31).then(__webpack_require__.bind(null, /*! ./flags/BS.js */ "../country-flags-react/dist/flags/BS.js"));
+    return __webpack_require__.e(/*! import() */ 31).then(__webpack_require__.t.bind(null, /*! ./flags/BS.js */ "../country-flags-react/dist/flags/BS.js", 7));
   },
   BT: function BT() {
-    return __webpack_require__.e(/*! import() */ 32).then(__webpack_require__.bind(null, /*! ./flags/BT.js */ "../country-flags-react/dist/flags/BT.js"));
+    return __webpack_require__.e(/*! import() */ 32).then(__webpack_require__.t.bind(null, /*! ./flags/BT.js */ "../country-flags-react/dist/flags/BT.js", 7));
   },
   BV: function BV() {
-    return __webpack_require__.e(/*! import() */ 33).then(__webpack_require__.bind(null, /*! ./flags/BV.js */ "../country-flags-react/dist/flags/BV.js"));
+    return __webpack_require__.e(/*! import() */ 33).then(__webpack_require__.t.bind(null, /*! ./flags/BV.js */ "../country-flags-react/dist/flags/BV.js", 7));
   },
   BW: function BW() {
-    return __webpack_require__.e(/*! import() */ 34).then(__webpack_require__.bind(null, /*! ./flags/BW.js */ "../country-flags-react/dist/flags/BW.js"));
+    return __webpack_require__.e(/*! import() */ 34).then(__webpack_require__.t.bind(null, /*! ./flags/BW.js */ "../country-flags-react/dist/flags/BW.js", 7));
   },
   BY: function BY() {
-    return __webpack_require__.e(/*! import() */ 35).then(__webpack_require__.bind(null, /*! ./flags/BY.js */ "../country-flags-react/dist/flags/BY.js"));
+    return __webpack_require__.e(/*! import() */ 35).then(__webpack_require__.t.bind(null, /*! ./flags/BY.js */ "../country-flags-react/dist/flags/BY.js", 7));
   },
   BZ: function BZ() {
-    return __webpack_require__.e(/*! import() */ 36).then(__webpack_require__.bind(null, /*! ./flags/BZ.js */ "../country-flags-react/dist/flags/BZ.js"));
+    return __webpack_require__.e(/*! import() */ 36).then(__webpack_require__.t.bind(null, /*! ./flags/BZ.js */ "../country-flags-react/dist/flags/BZ.js", 7));
   },
   CA: function CA() {
-    return __webpack_require__.e(/*! import() */ 37).then(__webpack_require__.bind(null, /*! ./flags/CA.js */ "../country-flags-react/dist/flags/CA.js"));
+    return __webpack_require__.e(/*! import() */ 37).then(__webpack_require__.t.bind(null, /*! ./flags/CA.js */ "../country-flags-react/dist/flags/CA.js", 7));
   },
   CC: function CC() {
-    return __webpack_require__.e(/*! import() */ 38).then(__webpack_require__.bind(null, /*! ./flags/CC.js */ "../country-flags-react/dist/flags/CC.js"));
+    return __webpack_require__.e(/*! import() */ 38).then(__webpack_require__.t.bind(null, /*! ./flags/CC.js */ "../country-flags-react/dist/flags/CC.js", 7));
   },
   CD: function CD() {
-    return __webpack_require__.e(/*! import() */ 39).then(__webpack_require__.bind(null, /*! ./flags/CD.js */ "../country-flags-react/dist/flags/CD.js"));
+    return __webpack_require__.e(/*! import() */ 39).then(__webpack_require__.t.bind(null, /*! ./flags/CD.js */ "../country-flags-react/dist/flags/CD.js", 7));
   },
   CF: function CF() {
-    return __webpack_require__.e(/*! import() */ 40).then(__webpack_require__.bind(null, /*! ./flags/CF.js */ "../country-flags-react/dist/flags/CF.js"));
+    return __webpack_require__.e(/*! import() */ 40).then(__webpack_require__.t.bind(null, /*! ./flags/CF.js */ "../country-flags-react/dist/flags/CF.js", 7));
   },
   CG: function CG() {
-    return __webpack_require__.e(/*! import() */ 41).then(__webpack_require__.bind(null, /*! ./flags/CG.js */ "../country-flags-react/dist/flags/CG.js"));
+    return __webpack_require__.e(/*! import() */ 41).then(__webpack_require__.t.bind(null, /*! ./flags/CG.js */ "../country-flags-react/dist/flags/CG.js", 7));
   },
   CH: function CH() {
-    return __webpack_require__.e(/*! import() */ 42).then(__webpack_require__.bind(null, /*! ./flags/CH.js */ "../country-flags-react/dist/flags/CH.js"));
+    return __webpack_require__.e(/*! import() */ 42).then(__webpack_require__.t.bind(null, /*! ./flags/CH.js */ "../country-flags-react/dist/flags/CH.js", 7));
   },
   CI: function CI() {
-    return __webpack_require__.e(/*! import() */ 43).then(__webpack_require__.bind(null, /*! ./flags/CI.js */ "../country-flags-react/dist/flags/CI.js"));
+    return __webpack_require__.e(/*! import() */ 43).then(__webpack_require__.t.bind(null, /*! ./flags/CI.js */ "../country-flags-react/dist/flags/CI.js", 7));
   },
   CK: function CK() {
-    return __webpack_require__.e(/*! import() */ 44).then(__webpack_require__.bind(null, /*! ./flags/CK.js */ "../country-flags-react/dist/flags/CK.js"));
+    return __webpack_require__.e(/*! import() */ 44).then(__webpack_require__.t.bind(null, /*! ./flags/CK.js */ "../country-flags-react/dist/flags/CK.js", 7));
   },
   CL: function CL() {
-    return __webpack_require__.e(/*! import() */ 45).then(__webpack_require__.bind(null, /*! ./flags/CL.js */ "../country-flags-react/dist/flags/CL.js"));
+    return __webpack_require__.e(/*! import() */ 45).then(__webpack_require__.t.bind(null, /*! ./flags/CL.js */ "../country-flags-react/dist/flags/CL.js", 7));
   },
   CM: function CM() {
-    return __webpack_require__.e(/*! import() */ 46).then(__webpack_require__.bind(null, /*! ./flags/CM.js */ "../country-flags-react/dist/flags/CM.js"));
+    return __webpack_require__.e(/*! import() */ 46).then(__webpack_require__.t.bind(null, /*! ./flags/CM.js */ "../country-flags-react/dist/flags/CM.js", 7));
   },
   CN: function CN() {
-    return __webpack_require__.e(/*! import() */ 47).then(__webpack_require__.bind(null, /*! ./flags/CN.js */ "../country-flags-react/dist/flags/CN.js"));
+    return __webpack_require__.e(/*! import() */ 47).then(__webpack_require__.t.bind(null, /*! ./flags/CN.js */ "../country-flags-react/dist/flags/CN.js", 7));
   },
   CO: function CO() {
-    return __webpack_require__.e(/*! import() */ 48).then(__webpack_require__.bind(null, /*! ./flags/CO.js */ "../country-flags-react/dist/flags/CO.js"));
+    return __webpack_require__.e(/*! import() */ 48).then(__webpack_require__.t.bind(null, /*! ./flags/CO.js */ "../country-flags-react/dist/flags/CO.js", 7));
   },
   CR: function CR() {
-    return __webpack_require__.e(/*! import() */ 49).then(__webpack_require__.bind(null, /*! ./flags/CR.js */ "../country-flags-react/dist/flags/CR.js"));
+    return __webpack_require__.e(/*! import() */ 49).then(__webpack_require__.t.bind(null, /*! ./flags/CR.js */ "../country-flags-react/dist/flags/CR.js", 7));
   },
   CU: function CU() {
-    return __webpack_require__.e(/*! import() */ 50).then(__webpack_require__.bind(null, /*! ./flags/CU.js */ "../country-flags-react/dist/flags/CU.js"));
+    return __webpack_require__.e(/*! import() */ 50).then(__webpack_require__.t.bind(null, /*! ./flags/CU.js */ "../country-flags-react/dist/flags/CU.js", 7));
   },
   CV: function CV() {
-    return __webpack_require__.e(/*! import() */ 51).then(__webpack_require__.bind(null, /*! ./flags/CV.js */ "../country-flags-react/dist/flags/CV.js"));
+    return __webpack_require__.e(/*! import() */ 51).then(__webpack_require__.t.bind(null, /*! ./flags/CV.js */ "../country-flags-react/dist/flags/CV.js", 7));
   },
   CW: function CW() {
-    return __webpack_require__.e(/*! import() */ 52).then(__webpack_require__.bind(null, /*! ./flags/CW.js */ "../country-flags-react/dist/flags/CW.js"));
+    return __webpack_require__.e(/*! import() */ 52).then(__webpack_require__.t.bind(null, /*! ./flags/CW.js */ "../country-flags-react/dist/flags/CW.js", 7));
   },
   CX: function CX() {
-    return __webpack_require__.e(/*! import() */ 53).then(__webpack_require__.bind(null, /*! ./flags/CX.js */ "../country-flags-react/dist/flags/CX.js"));
+    return __webpack_require__.e(/*! import() */ 53).then(__webpack_require__.t.bind(null, /*! ./flags/CX.js */ "../country-flags-react/dist/flags/CX.js", 7));
   },
   CY: function CY() {
-    return __webpack_require__.e(/*! import() */ 54).then(__webpack_require__.bind(null, /*! ./flags/CY.js */ "../country-flags-react/dist/flags/CY.js"));
+    return __webpack_require__.e(/*! import() */ 54).then(__webpack_require__.t.bind(null, /*! ./flags/CY.js */ "../country-flags-react/dist/flags/CY.js", 7));
   },
   CZ: function CZ() {
-    return __webpack_require__.e(/*! import() */ 55).then(__webpack_require__.bind(null, /*! ./flags/CZ.js */ "../country-flags-react/dist/flags/CZ.js"));
+    return __webpack_require__.e(/*! import() */ 55).then(__webpack_require__.t.bind(null, /*! ./flags/CZ.js */ "../country-flags-react/dist/flags/CZ.js", 7));
   },
   DE: function DE() {
-    return __webpack_require__.e(/*! import() */ 56).then(__webpack_require__.bind(null, /*! ./flags/DE.js */ "../country-flags-react/dist/flags/DE.js"));
+    return __webpack_require__.e(/*! import() */ 56).then(__webpack_require__.t.bind(null, /*! ./flags/DE.js */ "../country-flags-react/dist/flags/DE.js", 7));
   },
   DJ: function DJ() {
-    return __webpack_require__.e(/*! import() */ 57).then(__webpack_require__.bind(null, /*! ./flags/DJ.js */ "../country-flags-react/dist/flags/DJ.js"));
+    return __webpack_require__.e(/*! import() */ 57).then(__webpack_require__.t.bind(null, /*! ./flags/DJ.js */ "../country-flags-react/dist/flags/DJ.js", 7));
   },
   DK: function DK() {
-    return __webpack_require__.e(/*! import() */ 58).then(__webpack_require__.bind(null, /*! ./flags/DK.js */ "../country-flags-react/dist/flags/DK.js"));
+    return __webpack_require__.e(/*! import() */ 58).then(__webpack_require__.t.bind(null, /*! ./flags/DK.js */ "../country-flags-react/dist/flags/DK.js", 7));
   },
   DM: function DM() {
-    return __webpack_require__.e(/*! import() */ 59).then(__webpack_require__.bind(null, /*! ./flags/DM.js */ "../country-flags-react/dist/flags/DM.js"));
+    return __webpack_require__.e(/*! import() */ 59).then(__webpack_require__.t.bind(null, /*! ./flags/DM.js */ "../country-flags-react/dist/flags/DM.js", 7));
   },
   DO: function DO() {
-    return __webpack_require__.e(/*! import() */ 60).then(__webpack_require__.bind(null, /*! ./flags/DO.js */ "../country-flags-react/dist/flags/DO.js"));
+    return __webpack_require__.e(/*! import() */ 60).then(__webpack_require__.t.bind(null, /*! ./flags/DO.js */ "../country-flags-react/dist/flags/DO.js", 7));
   },
   DZ: function DZ() {
-    return __webpack_require__.e(/*! import() */ 61).then(__webpack_require__.bind(null, /*! ./flags/DZ.js */ "../country-flags-react/dist/flags/DZ.js"));
+    return __webpack_require__.e(/*! import() */ 61).then(__webpack_require__.t.bind(null, /*! ./flags/DZ.js */ "../country-flags-react/dist/flags/DZ.js", 7));
   },
   EC: function EC() {
-    return __webpack_require__.e(/*! import() */ 62).then(__webpack_require__.bind(null, /*! ./flags/EC.js */ "../country-flags-react/dist/flags/EC.js"));
+    return __webpack_require__.e(/*! import() */ 62).then(__webpack_require__.t.bind(null, /*! ./flags/EC.js */ "../country-flags-react/dist/flags/EC.js", 7));
   },
   EE: function EE() {
-    return __webpack_require__.e(/*! import() */ 63).then(__webpack_require__.bind(null, /*! ./flags/EE.js */ "../country-flags-react/dist/flags/EE.js"));
+    return __webpack_require__.e(/*! import() */ 63).then(__webpack_require__.t.bind(null, /*! ./flags/EE.js */ "../country-flags-react/dist/flags/EE.js", 7));
   },
   EG: function EG() {
-    return __webpack_require__.e(/*! import() */ 64).then(__webpack_require__.bind(null, /*! ./flags/EG.js */ "../country-flags-react/dist/flags/EG.js"));
+    return __webpack_require__.e(/*! import() */ 64).then(__webpack_require__.t.bind(null, /*! ./flags/EG.js */ "../country-flags-react/dist/flags/EG.js", 7));
   },
   EH: function EH() {
-    return __webpack_require__.e(/*! import() */ 65).then(__webpack_require__.bind(null, /*! ./flags/EH.js */ "../country-flags-react/dist/flags/EH.js"));
+    return __webpack_require__.e(/*! import() */ 65).then(__webpack_require__.t.bind(null, /*! ./flags/EH.js */ "../country-flags-react/dist/flags/EH.js", 7));
   },
   ER: function ER() {
-    return __webpack_require__.e(/*! import() */ 66).then(__webpack_require__.bind(null, /*! ./flags/ER.js */ "../country-flags-react/dist/flags/ER.js"));
+    return __webpack_require__.e(/*! import() */ 66).then(__webpack_require__.t.bind(null, /*! ./flags/ER.js */ "../country-flags-react/dist/flags/ER.js", 7));
   },
   ES: function ES() {
-    return __webpack_require__.e(/*! import() */ 67).then(__webpack_require__.bind(null, /*! ./flags/ES.js */ "../country-flags-react/dist/flags/ES.js"));
+    return __webpack_require__.e(/*! import() */ 67).then(__webpack_require__.t.bind(null, /*! ./flags/ES.js */ "../country-flags-react/dist/flags/ES.js", 7));
   },
   ET: function ET() {
-    return __webpack_require__.e(/*! import() */ 68).then(__webpack_require__.bind(null, /*! ./flags/ET.js */ "../country-flags-react/dist/flags/ET.js"));
+    return __webpack_require__.e(/*! import() */ 68).then(__webpack_require__.t.bind(null, /*! ./flags/ET.js */ "../country-flags-react/dist/flags/ET.js", 7));
   },
   EU: function EU() {
-    return __webpack_require__.e(/*! import() */ 69).then(__webpack_require__.bind(null, /*! ./flags/EU.js */ "../country-flags-react/dist/flags/EU.js"));
+    return __webpack_require__.e(/*! import() */ 69).then(__webpack_require__.t.bind(null, /*! ./flags/EU.js */ "../country-flags-react/dist/flags/EU.js", 7));
   },
   FI: function FI() {
-    return __webpack_require__.e(/*! import() */ 70).then(__webpack_require__.bind(null, /*! ./flags/FI.js */ "../country-flags-react/dist/flags/FI.js"));
+    return __webpack_require__.e(/*! import() */ 70).then(__webpack_require__.t.bind(null, /*! ./flags/FI.js */ "../country-flags-react/dist/flags/FI.js", 7));
   },
   FJ: function FJ() {
-    return __webpack_require__.e(/*! import() */ 71).then(__webpack_require__.bind(null, /*! ./flags/FJ.js */ "../country-flags-react/dist/flags/FJ.js"));
+    return __webpack_require__.e(/*! import() */ 71).then(__webpack_require__.t.bind(null, /*! ./flags/FJ.js */ "../country-flags-react/dist/flags/FJ.js", 7));
   },
   FK: function FK() {
-    return __webpack_require__.e(/*! import() */ 72).then(__webpack_require__.bind(null, /*! ./flags/FK.js */ "../country-flags-react/dist/flags/FK.js"));
+    return __webpack_require__.e(/*! import() */ 72).then(__webpack_require__.t.bind(null, /*! ./flags/FK.js */ "../country-flags-react/dist/flags/FK.js", 7));
   },
   FM: function FM() {
-    return __webpack_require__.e(/*! import() */ 73).then(__webpack_require__.bind(null, /*! ./flags/FM.js */ "../country-flags-react/dist/flags/FM.js"));
+    return __webpack_require__.e(/*! import() */ 73).then(__webpack_require__.t.bind(null, /*! ./flags/FM.js */ "../country-flags-react/dist/flags/FM.js", 7));
   },
   FO: function FO() {
-    return __webpack_require__.e(/*! import() */ 74).then(__webpack_require__.bind(null, /*! ./flags/FO.js */ "../country-flags-react/dist/flags/FO.js"));
+    return __webpack_require__.e(/*! import() */ 74).then(__webpack_require__.t.bind(null, /*! ./flags/FO.js */ "../country-flags-react/dist/flags/FO.js", 7));
   },
   FR: function FR() {
-    return __webpack_require__.e(/*! import() */ 75).then(__webpack_require__.bind(null, /*! ./flags/FR.js */ "../country-flags-react/dist/flags/FR.js"));
+    return __webpack_require__.e(/*! import() */ 75).then(__webpack_require__.t.bind(null, /*! ./flags/FR.js */ "../country-flags-react/dist/flags/FR.js", 7));
   },
   GA: function GA() {
-    return __webpack_require__.e(/*! import() */ 76).then(__webpack_require__.bind(null, /*! ./flags/GA.js */ "../country-flags-react/dist/flags/GA.js"));
+    return __webpack_require__.e(/*! import() */ 76).then(__webpack_require__.t.bind(null, /*! ./flags/GA.js */ "../country-flags-react/dist/flags/GA.js", 7));
   },
   GB: function GB() {
-    return __webpack_require__.e(/*! import() */ 77).then(__webpack_require__.bind(null, /*! ./flags/GB.js */ "../country-flags-react/dist/flags/GB.js"));
+    return __webpack_require__.e(/*! import() */ 77).then(__webpack_require__.t.bind(null, /*! ./flags/GB.js */ "../country-flags-react/dist/flags/GB.js", 7));
   },
   GD: function GD() {
-    return __webpack_require__.e(/*! import() */ 78).then(__webpack_require__.bind(null, /*! ./flags/GD.js */ "../country-flags-react/dist/flags/GD.js"));
+    return __webpack_require__.e(/*! import() */ 78).then(__webpack_require__.t.bind(null, /*! ./flags/GD.js */ "../country-flags-react/dist/flags/GD.js", 7));
   },
   GE: function GE() {
-    return __webpack_require__.e(/*! import() */ 79).then(__webpack_require__.bind(null, /*! ./flags/GE.js */ "../country-flags-react/dist/flags/GE.js"));
+    return __webpack_require__.e(/*! import() */ 79).then(__webpack_require__.t.bind(null, /*! ./flags/GE.js */ "../country-flags-react/dist/flags/GE.js", 7));
   },
   GF: function GF() {
-    return __webpack_require__.e(/*! import() */ 80).then(__webpack_require__.bind(null, /*! ./flags/GF.js */ "../country-flags-react/dist/flags/GF.js"));
+    return __webpack_require__.e(/*! import() */ 80).then(__webpack_require__.t.bind(null, /*! ./flags/GF.js */ "../country-flags-react/dist/flags/GF.js", 7));
   },
   GG: function GG() {
-    return __webpack_require__.e(/*! import() */ 81).then(__webpack_require__.bind(null, /*! ./flags/GG.js */ "../country-flags-react/dist/flags/GG.js"));
+    return __webpack_require__.e(/*! import() */ 81).then(__webpack_require__.t.bind(null, /*! ./flags/GG.js */ "../country-flags-react/dist/flags/GG.js", 7));
   },
   GH: function GH() {
-    return __webpack_require__.e(/*! import() */ 82).then(__webpack_require__.bind(null, /*! ./flags/GH.js */ "../country-flags-react/dist/flags/GH.js"));
+    return __webpack_require__.e(/*! import() */ 82).then(__webpack_require__.t.bind(null, /*! ./flags/GH.js */ "../country-flags-react/dist/flags/GH.js", 7));
   },
   GI: function GI() {
-    return __webpack_require__.e(/*! import() */ 83).then(__webpack_require__.bind(null, /*! ./flags/GI.js */ "../country-flags-react/dist/flags/GI.js"));
+    return __webpack_require__.e(/*! import() */ 83).then(__webpack_require__.t.bind(null, /*! ./flags/GI.js */ "../country-flags-react/dist/flags/GI.js", 7));
   },
   GL: function GL() {
-    return __webpack_require__.e(/*! import() */ 84).then(__webpack_require__.bind(null, /*! ./flags/GL.js */ "../country-flags-react/dist/flags/GL.js"));
+    return __webpack_require__.e(/*! import() */ 84).then(__webpack_require__.t.bind(null, /*! ./flags/GL.js */ "../country-flags-react/dist/flags/GL.js", 7));
   },
   GM: function GM() {
-    return __webpack_require__.e(/*! import() */ 85).then(__webpack_require__.bind(null, /*! ./flags/GM.js */ "../country-flags-react/dist/flags/GM.js"));
+    return __webpack_require__.e(/*! import() */ 85).then(__webpack_require__.t.bind(null, /*! ./flags/GM.js */ "../country-flags-react/dist/flags/GM.js", 7));
   },
   GN: function GN() {
-    return __webpack_require__.e(/*! import() */ 86).then(__webpack_require__.bind(null, /*! ./flags/GN.js */ "../country-flags-react/dist/flags/GN.js"));
+    return __webpack_require__.e(/*! import() */ 86).then(__webpack_require__.t.bind(null, /*! ./flags/GN.js */ "../country-flags-react/dist/flags/GN.js", 7));
   },
   GP: function GP() {
-    return __webpack_require__.e(/*! import() */ 87).then(__webpack_require__.bind(null, /*! ./flags/GP.js */ "../country-flags-react/dist/flags/GP.js"));
+    return __webpack_require__.e(/*! import() */ 87).then(__webpack_require__.t.bind(null, /*! ./flags/GP.js */ "../country-flags-react/dist/flags/GP.js", 7));
   },
   GQ: function GQ() {
-    return __webpack_require__.e(/*! import() */ 88).then(__webpack_require__.bind(null, /*! ./flags/GQ.js */ "../country-flags-react/dist/flags/GQ.js"));
+    return __webpack_require__.e(/*! import() */ 88).then(__webpack_require__.t.bind(null, /*! ./flags/GQ.js */ "../country-flags-react/dist/flags/GQ.js", 7));
   },
   GR: function GR() {
-    return __webpack_require__.e(/*! import() */ 89).then(__webpack_require__.bind(null, /*! ./flags/GR.js */ "../country-flags-react/dist/flags/GR.js"));
+    return __webpack_require__.e(/*! import() */ 89).then(__webpack_require__.t.bind(null, /*! ./flags/GR.js */ "../country-flags-react/dist/flags/GR.js", 7));
   },
   GS: function GS() {
-    return __webpack_require__.e(/*! import() */ 90).then(__webpack_require__.bind(null, /*! ./flags/GS.js */ "../country-flags-react/dist/flags/GS.js"));
+    return __webpack_require__.e(/*! import() */ 90).then(__webpack_require__.t.bind(null, /*! ./flags/GS.js */ "../country-flags-react/dist/flags/GS.js", 7));
   },
   GT: function GT() {
-    return __webpack_require__.e(/*! import() */ 91).then(__webpack_require__.bind(null, /*! ./flags/GT.js */ "../country-flags-react/dist/flags/GT.js"));
+    return __webpack_require__.e(/*! import() */ 91).then(__webpack_require__.t.bind(null, /*! ./flags/GT.js */ "../country-flags-react/dist/flags/GT.js", 7));
   },
   GU: function GU() {
-    return __webpack_require__.e(/*! import() */ 92).then(__webpack_require__.bind(null, /*! ./flags/GU.js */ "../country-flags-react/dist/flags/GU.js"));
+    return __webpack_require__.e(/*! import() */ 92).then(__webpack_require__.t.bind(null, /*! ./flags/GU.js */ "../country-flags-react/dist/flags/GU.js", 7));
   },
   GW: function GW() {
-    return __webpack_require__.e(/*! import() */ 93).then(__webpack_require__.bind(null, /*! ./flags/GW.js */ "../country-flags-react/dist/flags/GW.js"));
+    return __webpack_require__.e(/*! import() */ 93).then(__webpack_require__.t.bind(null, /*! ./flags/GW.js */ "../country-flags-react/dist/flags/GW.js", 7));
   },
   GY: function GY() {
-    return __webpack_require__.e(/*! import() */ 94).then(__webpack_require__.bind(null, /*! ./flags/GY.js */ "../country-flags-react/dist/flags/GY.js"));
+    return __webpack_require__.e(/*! import() */ 94).then(__webpack_require__.t.bind(null, /*! ./flags/GY.js */ "../country-flags-react/dist/flags/GY.js", 7));
   },
   HK: function HK() {
-    return __webpack_require__.e(/*! import() */ 95).then(__webpack_require__.bind(null, /*! ./flags/HK.js */ "../country-flags-react/dist/flags/HK.js"));
+    return __webpack_require__.e(/*! import() */ 95).then(__webpack_require__.t.bind(null, /*! ./flags/HK.js */ "../country-flags-react/dist/flags/HK.js", 7));
   },
   HM: function HM() {
-    return __webpack_require__.e(/*! import() */ 96).then(__webpack_require__.bind(null, /*! ./flags/HM.js */ "../country-flags-react/dist/flags/HM.js"));
+    return __webpack_require__.e(/*! import() */ 96).then(__webpack_require__.t.bind(null, /*! ./flags/HM.js */ "../country-flags-react/dist/flags/HM.js", 7));
   },
   HN: function HN() {
-    return __webpack_require__.e(/*! import() */ 97).then(__webpack_require__.bind(null, /*! ./flags/HN.js */ "../country-flags-react/dist/flags/HN.js"));
+    return __webpack_require__.e(/*! import() */ 97).then(__webpack_require__.t.bind(null, /*! ./flags/HN.js */ "../country-flags-react/dist/flags/HN.js", 7));
   },
   HR: function HR() {
-    return __webpack_require__.e(/*! import() */ 98).then(__webpack_require__.bind(null, /*! ./flags/HR.js */ "../country-flags-react/dist/flags/HR.js"));
+    return __webpack_require__.e(/*! import() */ 98).then(__webpack_require__.t.bind(null, /*! ./flags/HR.js */ "../country-flags-react/dist/flags/HR.js", 7));
   },
   HT: function HT() {
-    return __webpack_require__.e(/*! import() */ 99).then(__webpack_require__.bind(null, /*! ./flags/HT.js */ "../country-flags-react/dist/flags/HT.js"));
+    return __webpack_require__.e(/*! import() */ 99).then(__webpack_require__.t.bind(null, /*! ./flags/HT.js */ "../country-flags-react/dist/flags/HT.js", 7));
   },
   HU: function HU() {
-    return __webpack_require__.e(/*! import() */ 100).then(__webpack_require__.bind(null, /*! ./flags/HU.js */ "../country-flags-react/dist/flags/HU.js"));
+    return __webpack_require__.e(/*! import() */ 100).then(__webpack_require__.t.bind(null, /*! ./flags/HU.js */ "../country-flags-react/dist/flags/HU.js", 7));
   },
   ID: function ID() {
-    return __webpack_require__.e(/*! import() */ 101).then(__webpack_require__.bind(null, /*! ./flags/ID.js */ "../country-flags-react/dist/flags/ID.js"));
+    return __webpack_require__.e(/*! import() */ 101).then(__webpack_require__.t.bind(null, /*! ./flags/ID.js */ "../country-flags-react/dist/flags/ID.js", 7));
   },
   IE: function IE() {
-    return __webpack_require__.e(/*! import() */ 102).then(__webpack_require__.bind(null, /*! ./flags/IE.js */ "../country-flags-react/dist/flags/IE.js"));
+    return __webpack_require__.e(/*! import() */ 102).then(__webpack_require__.t.bind(null, /*! ./flags/IE.js */ "../country-flags-react/dist/flags/IE.js", 7));
   },
   IL: function IL() {
-    return __webpack_require__.e(/*! import() */ 103).then(__webpack_require__.bind(null, /*! ./flags/IL.js */ "../country-flags-react/dist/flags/IL.js"));
+    return __webpack_require__.e(/*! import() */ 103).then(__webpack_require__.t.bind(null, /*! ./flags/IL.js */ "../country-flags-react/dist/flags/IL.js", 7));
   },
   IM: function IM() {
-    return __webpack_require__.e(/*! import() */ 104).then(__webpack_require__.bind(null, /*! ./flags/IM.js */ "../country-flags-react/dist/flags/IM.js"));
+    return __webpack_require__.e(/*! import() */ 104).then(__webpack_require__.t.bind(null, /*! ./flags/IM.js */ "../country-flags-react/dist/flags/IM.js", 7));
   },
   IN: function IN() {
-    return __webpack_require__.e(/*! import() */ 105).then(__webpack_require__.bind(null, /*! ./flags/IN.js */ "../country-flags-react/dist/flags/IN.js"));
+    return __webpack_require__.e(/*! import() */ 105).then(__webpack_require__.t.bind(null, /*! ./flags/IN.js */ "../country-flags-react/dist/flags/IN.js", 7));
   },
   IO: function IO() {
-    return __webpack_require__.e(/*! import() */ 106).then(__webpack_require__.bind(null, /*! ./flags/IO.js */ "../country-flags-react/dist/flags/IO.js"));
+    return __webpack_require__.e(/*! import() */ 106).then(__webpack_require__.t.bind(null, /*! ./flags/IO.js */ "../country-flags-react/dist/flags/IO.js", 7));
   },
   IQ: function IQ() {
-    return __webpack_require__.e(/*! import() */ 107).then(__webpack_require__.bind(null, /*! ./flags/IQ.js */ "../country-flags-react/dist/flags/IQ.js"));
+    return __webpack_require__.e(/*! import() */ 107).then(__webpack_require__.t.bind(null, /*! ./flags/IQ.js */ "../country-flags-react/dist/flags/IQ.js", 7));
   },
   IR: function IR() {
-    return __webpack_require__.e(/*! import() */ 108).then(__webpack_require__.bind(null, /*! ./flags/IR.js */ "../country-flags-react/dist/flags/IR.js"));
+    return __webpack_require__.e(/*! import() */ 108).then(__webpack_require__.t.bind(null, /*! ./flags/IR.js */ "../country-flags-react/dist/flags/IR.js", 7));
   },
   IS: function IS() {
-    return __webpack_require__.e(/*! import() */ 109).then(__webpack_require__.bind(null, /*! ./flags/IS.js */ "../country-flags-react/dist/flags/IS.js"));
+    return __webpack_require__.e(/*! import() */ 109).then(__webpack_require__.t.bind(null, /*! ./flags/IS.js */ "../country-flags-react/dist/flags/IS.js", 7));
   },
   IT: function IT() {
-    return __webpack_require__.e(/*! import() */ 110).then(__webpack_require__.bind(null, /*! ./flags/IT.js */ "../country-flags-react/dist/flags/IT.js"));
+    return __webpack_require__.e(/*! import() */ 110).then(__webpack_require__.t.bind(null, /*! ./flags/IT.js */ "../country-flags-react/dist/flags/IT.js", 7));
   },
   JE: function JE() {
-    return __webpack_require__.e(/*! import() */ 111).then(__webpack_require__.bind(null, /*! ./flags/JE.js */ "../country-flags-react/dist/flags/JE.js"));
+    return __webpack_require__.e(/*! import() */ 111).then(__webpack_require__.t.bind(null, /*! ./flags/JE.js */ "../country-flags-react/dist/flags/JE.js", 7));
   },
   JM: function JM() {
-    return __webpack_require__.e(/*! import() */ 112).then(__webpack_require__.bind(null, /*! ./flags/JM.js */ "../country-flags-react/dist/flags/JM.js"));
+    return __webpack_require__.e(/*! import() */ 112).then(__webpack_require__.t.bind(null, /*! ./flags/JM.js */ "../country-flags-react/dist/flags/JM.js", 7));
   },
   JO: function JO() {
-    return __webpack_require__.e(/*! import() */ 113).then(__webpack_require__.bind(null, /*! ./flags/JO.js */ "../country-flags-react/dist/flags/JO.js"));
+    return __webpack_require__.e(/*! import() */ 113).then(__webpack_require__.t.bind(null, /*! ./flags/JO.js */ "../country-flags-react/dist/flags/JO.js", 7));
   },
   JP: function JP() {
-    return __webpack_require__.e(/*! import() */ 114).then(__webpack_require__.bind(null, /*! ./flags/JP.js */ "../country-flags-react/dist/flags/JP.js"));
+    return __webpack_require__.e(/*! import() */ 114).then(__webpack_require__.t.bind(null, /*! ./flags/JP.js */ "../country-flags-react/dist/flags/JP.js", 7));
   },
   KE: function KE() {
-    return __webpack_require__.e(/*! import() */ 115).then(__webpack_require__.bind(null, /*! ./flags/KE.js */ "../country-flags-react/dist/flags/KE.js"));
+    return __webpack_require__.e(/*! import() */ 115).then(__webpack_require__.t.bind(null, /*! ./flags/KE.js */ "../country-flags-react/dist/flags/KE.js", 7));
   },
   KG: function KG() {
-    return __webpack_require__.e(/*! import() */ 116).then(__webpack_require__.bind(null, /*! ./flags/KG.js */ "../country-flags-react/dist/flags/KG.js"));
+    return __webpack_require__.e(/*! import() */ 116).then(__webpack_require__.t.bind(null, /*! ./flags/KG.js */ "../country-flags-react/dist/flags/KG.js", 7));
   },
   KH: function KH() {
-    return __webpack_require__.e(/*! import() */ 117).then(__webpack_require__.bind(null, /*! ./flags/KH.js */ "../country-flags-react/dist/flags/KH.js"));
+    return __webpack_require__.e(/*! import() */ 117).then(__webpack_require__.t.bind(null, /*! ./flags/KH.js */ "../country-flags-react/dist/flags/KH.js", 7));
   },
   KI: function KI() {
-    return __webpack_require__.e(/*! import() */ 118).then(__webpack_require__.bind(null, /*! ./flags/KI.js */ "../country-flags-react/dist/flags/KI.js"));
+    return __webpack_require__.e(/*! import() */ 118).then(__webpack_require__.t.bind(null, /*! ./flags/KI.js */ "../country-flags-react/dist/flags/KI.js", 7));
   },
   KM: function KM() {
-    return __webpack_require__.e(/*! import() */ 119).then(__webpack_require__.bind(null, /*! ./flags/KM.js */ "../country-flags-react/dist/flags/KM.js"));
+    return __webpack_require__.e(/*! import() */ 119).then(__webpack_require__.t.bind(null, /*! ./flags/KM.js */ "../country-flags-react/dist/flags/KM.js", 7));
   },
   KN: function KN() {
-    return __webpack_require__.e(/*! import() */ 120).then(__webpack_require__.bind(null, /*! ./flags/KN.js */ "../country-flags-react/dist/flags/KN.js"));
+    return __webpack_require__.e(/*! import() */ 120).then(__webpack_require__.t.bind(null, /*! ./flags/KN.js */ "../country-flags-react/dist/flags/KN.js", 7));
   },
   KP: function KP() {
-    return __webpack_require__.e(/*! import() */ 121).then(__webpack_require__.bind(null, /*! ./flags/KP.js */ "../country-flags-react/dist/flags/KP.js"));
+    return __webpack_require__.e(/*! import() */ 121).then(__webpack_require__.t.bind(null, /*! ./flags/KP.js */ "../country-flags-react/dist/flags/KP.js", 7));
   },
   KR: function KR() {
-    return __webpack_require__.e(/*! import() */ 122).then(__webpack_require__.bind(null, /*! ./flags/KR.js */ "../country-flags-react/dist/flags/KR.js"));
+    return __webpack_require__.e(/*! import() */ 122).then(__webpack_require__.t.bind(null, /*! ./flags/KR.js */ "../country-flags-react/dist/flags/KR.js", 7));
   },
   KW: function KW() {
-    return __webpack_require__.e(/*! import() */ 123).then(__webpack_require__.bind(null, /*! ./flags/KW.js */ "../country-flags-react/dist/flags/KW.js"));
+    return __webpack_require__.e(/*! import() */ 123).then(__webpack_require__.t.bind(null, /*! ./flags/KW.js */ "../country-flags-react/dist/flags/KW.js", 7));
   },
   KY: function KY() {
-    return __webpack_require__.e(/*! import() */ 124).then(__webpack_require__.bind(null, /*! ./flags/KY.js */ "../country-flags-react/dist/flags/KY.js"));
+    return __webpack_require__.e(/*! import() */ 124).then(__webpack_require__.t.bind(null, /*! ./flags/KY.js */ "../country-flags-react/dist/flags/KY.js", 7));
   },
   KZ: function KZ() {
-    return __webpack_require__.e(/*! import() */ 125).then(__webpack_require__.bind(null, /*! ./flags/KZ.js */ "../country-flags-react/dist/flags/KZ.js"));
+    return __webpack_require__.e(/*! import() */ 125).then(__webpack_require__.t.bind(null, /*! ./flags/KZ.js */ "../country-flags-react/dist/flags/KZ.js", 7));
   },
   LA: function LA() {
-    return __webpack_require__.e(/*! import() */ 126).then(__webpack_require__.bind(null, /*! ./flags/LA.js */ "../country-flags-react/dist/flags/LA.js"));
+    return __webpack_require__.e(/*! import() */ 126).then(__webpack_require__.t.bind(null, /*! ./flags/LA.js */ "../country-flags-react/dist/flags/LA.js", 7));
   },
   LB: function LB() {
-    return __webpack_require__.e(/*! import() */ 127).then(__webpack_require__.bind(null, /*! ./flags/LB.js */ "../country-flags-react/dist/flags/LB.js"));
+    return __webpack_require__.e(/*! import() */ 127).then(__webpack_require__.t.bind(null, /*! ./flags/LB.js */ "../country-flags-react/dist/flags/LB.js", 7));
   },
   LC: function LC() {
-    return __webpack_require__.e(/*! import() */ 128).then(__webpack_require__.bind(null, /*! ./flags/LC.js */ "../country-flags-react/dist/flags/LC.js"));
+    return __webpack_require__.e(/*! import() */ 128).then(__webpack_require__.t.bind(null, /*! ./flags/LC.js */ "../country-flags-react/dist/flags/LC.js", 7));
   },
   LI: function LI() {
-    return __webpack_require__.e(/*! import() */ 129).then(__webpack_require__.bind(null, /*! ./flags/LI.js */ "../country-flags-react/dist/flags/LI.js"));
+    return __webpack_require__.e(/*! import() */ 129).then(__webpack_require__.t.bind(null, /*! ./flags/LI.js */ "../country-flags-react/dist/flags/LI.js", 7));
   },
   LK: function LK() {
-    return __webpack_require__.e(/*! import() */ 130).then(__webpack_require__.bind(null, /*! ./flags/LK.js */ "../country-flags-react/dist/flags/LK.js"));
+    return __webpack_require__.e(/*! import() */ 130).then(__webpack_require__.t.bind(null, /*! ./flags/LK.js */ "../country-flags-react/dist/flags/LK.js", 7));
   },
   LR: function LR() {
-    return __webpack_require__.e(/*! import() */ 131).then(__webpack_require__.bind(null, /*! ./flags/LR.js */ "../country-flags-react/dist/flags/LR.js"));
+    return __webpack_require__.e(/*! import() */ 131).then(__webpack_require__.t.bind(null, /*! ./flags/LR.js */ "../country-flags-react/dist/flags/LR.js", 7));
   },
   LS: function LS() {
-    return __webpack_require__.e(/*! import() */ 132).then(__webpack_require__.bind(null, /*! ./flags/LS.js */ "../country-flags-react/dist/flags/LS.js"));
+    return __webpack_require__.e(/*! import() */ 132).then(__webpack_require__.t.bind(null, /*! ./flags/LS.js */ "../country-flags-react/dist/flags/LS.js", 7));
   },
   LT: function LT() {
-    return __webpack_require__.e(/*! import() */ 133).then(__webpack_require__.bind(null, /*! ./flags/LT.js */ "../country-flags-react/dist/flags/LT.js"));
+    return __webpack_require__.e(/*! import() */ 133).then(__webpack_require__.t.bind(null, /*! ./flags/LT.js */ "../country-flags-react/dist/flags/LT.js", 7));
   },
   LU: function LU() {
-    return __webpack_require__.e(/*! import() */ 134).then(__webpack_require__.bind(null, /*! ./flags/LU.js */ "../country-flags-react/dist/flags/LU.js"));
+    return __webpack_require__.e(/*! import() */ 134).then(__webpack_require__.t.bind(null, /*! ./flags/LU.js */ "../country-flags-react/dist/flags/LU.js", 7));
   },
   LV: function LV() {
-    return __webpack_require__.e(/*! import() */ 135).then(__webpack_require__.bind(null, /*! ./flags/LV.js */ "../country-flags-react/dist/flags/LV.js"));
+    return __webpack_require__.e(/*! import() */ 135).then(__webpack_require__.t.bind(null, /*! ./flags/LV.js */ "../country-flags-react/dist/flags/LV.js", 7));
   },
   LY: function LY() {
-    return __webpack_require__.e(/*! import() */ 136).then(__webpack_require__.bind(null, /*! ./flags/LY.js */ "../country-flags-react/dist/flags/LY.js"));
+    return __webpack_require__.e(/*! import() */ 136).then(__webpack_require__.t.bind(null, /*! ./flags/LY.js */ "../country-flags-react/dist/flags/LY.js", 7));
   },
   MA: function MA() {
-    return __webpack_require__.e(/*! import() */ 137).then(__webpack_require__.bind(null, /*! ./flags/MA.js */ "../country-flags-react/dist/flags/MA.js"));
+    return __webpack_require__.e(/*! import() */ 137).then(__webpack_require__.t.bind(null, /*! ./flags/MA.js */ "../country-flags-react/dist/flags/MA.js", 7));
   },
   MC: function MC() {
-    return __webpack_require__.e(/*! import() */ 138).then(__webpack_require__.bind(null, /*! ./flags/MC.js */ "../country-flags-react/dist/flags/MC.js"));
+    return __webpack_require__.e(/*! import() */ 138).then(__webpack_require__.t.bind(null, /*! ./flags/MC.js */ "../country-flags-react/dist/flags/MC.js", 7));
   },
   MD: function MD() {
-    return __webpack_require__.e(/*! import() */ 139).then(__webpack_require__.bind(null, /*! ./flags/MD.js */ "../country-flags-react/dist/flags/MD.js"));
+    return __webpack_require__.e(/*! import() */ 139).then(__webpack_require__.t.bind(null, /*! ./flags/MD.js */ "../country-flags-react/dist/flags/MD.js", 7));
   },
   ME: function ME() {
-    return __webpack_require__.e(/*! import() */ 140).then(__webpack_require__.bind(null, /*! ./flags/ME.js */ "../country-flags-react/dist/flags/ME.js"));
+    return __webpack_require__.e(/*! import() */ 140).then(__webpack_require__.t.bind(null, /*! ./flags/ME.js */ "../country-flags-react/dist/flags/ME.js", 7));
   },
   MF: function MF() {
-    return __webpack_require__.e(/*! import() */ 141).then(__webpack_require__.bind(null, /*! ./flags/MF.js */ "../country-flags-react/dist/flags/MF.js"));
+    return __webpack_require__.e(/*! import() */ 141).then(__webpack_require__.t.bind(null, /*! ./flags/MF.js */ "../country-flags-react/dist/flags/MF.js", 7));
   },
   MG: function MG() {
-    return __webpack_require__.e(/*! import() */ 142).then(__webpack_require__.bind(null, /*! ./flags/MG.js */ "../country-flags-react/dist/flags/MG.js"));
+    return __webpack_require__.e(/*! import() */ 142).then(__webpack_require__.t.bind(null, /*! ./flags/MG.js */ "../country-flags-react/dist/flags/MG.js", 7));
   },
   MH: function MH() {
-    return __webpack_require__.e(/*! import() */ 143).then(__webpack_require__.bind(null, /*! ./flags/MH.js */ "../country-flags-react/dist/flags/MH.js"));
+    return __webpack_require__.e(/*! import() */ 143).then(__webpack_require__.t.bind(null, /*! ./flags/MH.js */ "../country-flags-react/dist/flags/MH.js", 7));
   },
   MK: function MK() {
-    return __webpack_require__.e(/*! import() */ 144).then(__webpack_require__.bind(null, /*! ./flags/MK.js */ "../country-flags-react/dist/flags/MK.js"));
+    return __webpack_require__.e(/*! import() */ 144).then(__webpack_require__.t.bind(null, /*! ./flags/MK.js */ "../country-flags-react/dist/flags/MK.js", 7));
   },
   ML: function ML() {
-    return __webpack_require__.e(/*! import() */ 145).then(__webpack_require__.bind(null, /*! ./flags/ML.js */ "../country-flags-react/dist/flags/ML.js"));
+    return __webpack_require__.e(/*! import() */ 145).then(__webpack_require__.t.bind(null, /*! ./flags/ML.js */ "../country-flags-react/dist/flags/ML.js", 7));
   },
   MM: function MM() {
-    return __webpack_require__.e(/*! import() */ 146).then(__webpack_require__.bind(null, /*! ./flags/MM.js */ "../country-flags-react/dist/flags/MM.js"));
+    return __webpack_require__.e(/*! import() */ 146).then(__webpack_require__.t.bind(null, /*! ./flags/MM.js */ "../country-flags-react/dist/flags/MM.js", 7));
   },
   MN: function MN() {
-    return __webpack_require__.e(/*! import() */ 147).then(__webpack_require__.bind(null, /*! ./flags/MN.js */ "../country-flags-react/dist/flags/MN.js"));
+    return __webpack_require__.e(/*! import() */ 147).then(__webpack_require__.t.bind(null, /*! ./flags/MN.js */ "../country-flags-react/dist/flags/MN.js", 7));
   },
   MO: function MO() {
-    return __webpack_require__.e(/*! import() */ 148).then(__webpack_require__.bind(null, /*! ./flags/MO.js */ "../country-flags-react/dist/flags/MO.js"));
+    return __webpack_require__.e(/*! import() */ 148).then(__webpack_require__.t.bind(null, /*! ./flags/MO.js */ "../country-flags-react/dist/flags/MO.js", 7));
   },
   MP: function MP() {
-    return __webpack_require__.e(/*! import() */ 149).then(__webpack_require__.bind(null, /*! ./flags/MP.js */ "../country-flags-react/dist/flags/MP.js"));
+    return __webpack_require__.e(/*! import() */ 149).then(__webpack_require__.t.bind(null, /*! ./flags/MP.js */ "../country-flags-react/dist/flags/MP.js", 7));
   },
   MQ: function MQ() {
-    return __webpack_require__.e(/*! import() */ 150).then(__webpack_require__.bind(null, /*! ./flags/MQ.js */ "../country-flags-react/dist/flags/MQ.js"));
+    return __webpack_require__.e(/*! import() */ 150).then(__webpack_require__.t.bind(null, /*! ./flags/MQ.js */ "../country-flags-react/dist/flags/MQ.js", 7));
   },
   MR: function MR() {
-    return __webpack_require__.e(/*! import() */ 151).then(__webpack_require__.bind(null, /*! ./flags/MR.js */ "../country-flags-react/dist/flags/MR.js"));
+    return __webpack_require__.e(/*! import() */ 151).then(__webpack_require__.t.bind(null, /*! ./flags/MR.js */ "../country-flags-react/dist/flags/MR.js", 7));
   },
   MS: function MS() {
-    return __webpack_require__.e(/*! import() */ 152).then(__webpack_require__.bind(null, /*! ./flags/MS.js */ "../country-flags-react/dist/flags/MS.js"));
+    return __webpack_require__.e(/*! import() */ 152).then(__webpack_require__.t.bind(null, /*! ./flags/MS.js */ "../country-flags-react/dist/flags/MS.js", 7));
   },
   MT: function MT() {
-    return __webpack_require__.e(/*! import() */ 153).then(__webpack_require__.bind(null, /*! ./flags/MT.js */ "../country-flags-react/dist/flags/MT.js"));
+    return __webpack_require__.e(/*! import() */ 153).then(__webpack_require__.t.bind(null, /*! ./flags/MT.js */ "../country-flags-react/dist/flags/MT.js", 7));
   },
   MU: function MU() {
-    return __webpack_require__.e(/*! import() */ 154).then(__webpack_require__.bind(null, /*! ./flags/MU.js */ "../country-flags-react/dist/flags/MU.js"));
+    return __webpack_require__.e(/*! import() */ 154).then(__webpack_require__.t.bind(null, /*! ./flags/MU.js */ "../country-flags-react/dist/flags/MU.js", 7));
   },
   MV: function MV() {
-    return __webpack_require__.e(/*! import() */ 155).then(__webpack_require__.bind(null, /*! ./flags/MV.js */ "../country-flags-react/dist/flags/MV.js"));
+    return __webpack_require__.e(/*! import() */ 155).then(__webpack_require__.t.bind(null, /*! ./flags/MV.js */ "../country-flags-react/dist/flags/MV.js", 7));
   },
   MW: function MW() {
-    return __webpack_require__.e(/*! import() */ 156).then(__webpack_require__.bind(null, /*! ./flags/MW.js */ "../country-flags-react/dist/flags/MW.js"));
+    return __webpack_require__.e(/*! import() */ 156).then(__webpack_require__.t.bind(null, /*! ./flags/MW.js */ "../country-flags-react/dist/flags/MW.js", 7));
   },
   MX: function MX() {
-    return __webpack_require__.e(/*! import() */ 157).then(__webpack_require__.bind(null, /*! ./flags/MX.js */ "../country-flags-react/dist/flags/MX.js"));
+    return __webpack_require__.e(/*! import() */ 157).then(__webpack_require__.t.bind(null, /*! ./flags/MX.js */ "../country-flags-react/dist/flags/MX.js", 7));
   },
   MY: function MY() {
-    return __webpack_require__.e(/*! import() */ 158).then(__webpack_require__.bind(null, /*! ./flags/MY.js */ "../country-flags-react/dist/flags/MY.js"));
+    return __webpack_require__.e(/*! import() */ 158).then(__webpack_require__.t.bind(null, /*! ./flags/MY.js */ "../country-flags-react/dist/flags/MY.js", 7));
   },
   MZ: function MZ() {
-    return __webpack_require__.e(/*! import() */ 159).then(__webpack_require__.bind(null, /*! ./flags/MZ.js */ "../country-flags-react/dist/flags/MZ.js"));
+    return __webpack_require__.e(/*! import() */ 159).then(__webpack_require__.t.bind(null, /*! ./flags/MZ.js */ "../country-flags-react/dist/flags/MZ.js", 7));
   },
   NA: function NA() {
-    return __webpack_require__.e(/*! import() */ 160).then(__webpack_require__.bind(null, /*! ./flags/NA.js */ "../country-flags-react/dist/flags/NA.js"));
+    return __webpack_require__.e(/*! import() */ 160).then(__webpack_require__.t.bind(null, /*! ./flags/NA.js */ "../country-flags-react/dist/flags/NA.js", 7));
   },
   NC: function NC() {
-    return __webpack_require__.e(/*! import() */ 161).then(__webpack_require__.bind(null, /*! ./flags/NC.js */ "../country-flags-react/dist/flags/NC.js"));
+    return __webpack_require__.e(/*! import() */ 161).then(__webpack_require__.t.bind(null, /*! ./flags/NC.js */ "../country-flags-react/dist/flags/NC.js", 7));
   },
   NE: function NE() {
-    return __webpack_require__.e(/*! import() */ 162).then(__webpack_require__.bind(null, /*! ./flags/NE.js */ "../country-flags-react/dist/flags/NE.js"));
+    return __webpack_require__.e(/*! import() */ 162).then(__webpack_require__.t.bind(null, /*! ./flags/NE.js */ "../country-flags-react/dist/flags/NE.js", 7));
   },
   NF: function NF() {
-    return __webpack_require__.e(/*! import() */ 163).then(__webpack_require__.bind(null, /*! ./flags/NF.js */ "../country-flags-react/dist/flags/NF.js"));
+    return __webpack_require__.e(/*! import() */ 163).then(__webpack_require__.t.bind(null, /*! ./flags/NF.js */ "../country-flags-react/dist/flags/NF.js", 7));
   },
   NG: function NG() {
-    return __webpack_require__.e(/*! import() */ 164).then(__webpack_require__.bind(null, /*! ./flags/NG.js */ "../country-flags-react/dist/flags/NG.js"));
+    return __webpack_require__.e(/*! import() */ 164).then(__webpack_require__.t.bind(null, /*! ./flags/NG.js */ "../country-flags-react/dist/flags/NG.js", 7));
   },
   NI: function NI() {
-    return __webpack_require__.e(/*! import() */ 165).then(__webpack_require__.bind(null, /*! ./flags/NI.js */ "../country-flags-react/dist/flags/NI.js"));
+    return __webpack_require__.e(/*! import() */ 165).then(__webpack_require__.t.bind(null, /*! ./flags/NI.js */ "../country-flags-react/dist/flags/NI.js", 7));
   },
   NL: function NL() {
-    return __webpack_require__.e(/*! import() */ 166).then(__webpack_require__.bind(null, /*! ./flags/NL.js */ "../country-flags-react/dist/flags/NL.js"));
+    return __webpack_require__.e(/*! import() */ 166).then(__webpack_require__.t.bind(null, /*! ./flags/NL.js */ "../country-flags-react/dist/flags/NL.js", 7));
   },
   NO: function NO() {
-    return __webpack_require__.e(/*! import() */ 167).then(__webpack_require__.bind(null, /*! ./flags/NO.js */ "../country-flags-react/dist/flags/NO.js"));
+    return __webpack_require__.e(/*! import() */ 167).then(__webpack_require__.t.bind(null, /*! ./flags/NO.js */ "../country-flags-react/dist/flags/NO.js", 7));
   },
   NP: function NP() {
-    return __webpack_require__.e(/*! import() */ 168).then(__webpack_require__.bind(null, /*! ./flags/NP.js */ "../country-flags-react/dist/flags/NP.js"));
+    return __webpack_require__.e(/*! import() */ 168).then(__webpack_require__.t.bind(null, /*! ./flags/NP.js */ "../country-flags-react/dist/flags/NP.js", 7));
   },
   NR: function NR() {
-    return __webpack_require__.e(/*! import() */ 169).then(__webpack_require__.bind(null, /*! ./flags/NR.js */ "../country-flags-react/dist/flags/NR.js"));
+    return __webpack_require__.e(/*! import() */ 169).then(__webpack_require__.t.bind(null, /*! ./flags/NR.js */ "../country-flags-react/dist/flags/NR.js", 7));
   },
   NU: function NU() {
-    return __webpack_require__.e(/*! import() */ 170).then(__webpack_require__.bind(null, /*! ./flags/NU.js */ "../country-flags-react/dist/flags/NU.js"));
+    return __webpack_require__.e(/*! import() */ 170).then(__webpack_require__.t.bind(null, /*! ./flags/NU.js */ "../country-flags-react/dist/flags/NU.js", 7));
   },
   NZ: function NZ() {
-    return __webpack_require__.e(/*! import() */ 171).then(__webpack_require__.bind(null, /*! ./flags/NZ.js */ "../country-flags-react/dist/flags/NZ.js"));
+    return __webpack_require__.e(/*! import() */ 171).then(__webpack_require__.t.bind(null, /*! ./flags/NZ.js */ "../country-flags-react/dist/flags/NZ.js", 7));
   },
   OM: function OM() {
-    return __webpack_require__.e(/*! import() */ 172).then(__webpack_require__.bind(null, /*! ./flags/OM.js */ "../country-flags-react/dist/flags/OM.js"));
+    return __webpack_require__.e(/*! import() */ 172).then(__webpack_require__.t.bind(null, /*! ./flags/OM.js */ "../country-flags-react/dist/flags/OM.js", 7));
   },
   PA: function PA() {
-    return __webpack_require__.e(/*! import() */ 173).then(__webpack_require__.bind(null, /*! ./flags/PA.js */ "../country-flags-react/dist/flags/PA.js"));
+    return __webpack_require__.e(/*! import() */ 173).then(__webpack_require__.t.bind(null, /*! ./flags/PA.js */ "../country-flags-react/dist/flags/PA.js", 7));
   },
   PE: function PE() {
-    return __webpack_require__.e(/*! import() */ 174).then(__webpack_require__.bind(null, /*! ./flags/PE.js */ "../country-flags-react/dist/flags/PE.js"));
+    return __webpack_require__.e(/*! import() */ 174).then(__webpack_require__.t.bind(null, /*! ./flags/PE.js */ "../country-flags-react/dist/flags/PE.js", 7));
   },
   PF: function PF() {
-    return __webpack_require__.e(/*! import() */ 175).then(__webpack_require__.bind(null, /*! ./flags/PF.js */ "../country-flags-react/dist/flags/PF.js"));
+    return __webpack_require__.e(/*! import() */ 175).then(__webpack_require__.t.bind(null, /*! ./flags/PF.js */ "../country-flags-react/dist/flags/PF.js", 7));
   },
   PG: function PG() {
-    return __webpack_require__.e(/*! import() */ 176).then(__webpack_require__.bind(null, /*! ./flags/PG.js */ "../country-flags-react/dist/flags/PG.js"));
+    return __webpack_require__.e(/*! import() */ 176).then(__webpack_require__.t.bind(null, /*! ./flags/PG.js */ "../country-flags-react/dist/flags/PG.js", 7));
   },
   PH: function PH() {
-    return __webpack_require__.e(/*! import() */ 177).then(__webpack_require__.bind(null, /*! ./flags/PH.js */ "../country-flags-react/dist/flags/PH.js"));
+    return __webpack_require__.e(/*! import() */ 177).then(__webpack_require__.t.bind(null, /*! ./flags/PH.js */ "../country-flags-react/dist/flags/PH.js", 7));
   },
   PK: function PK() {
-    return __webpack_require__.e(/*! import() */ 178).then(__webpack_require__.bind(null, /*! ./flags/PK.js */ "../country-flags-react/dist/flags/PK.js"));
+    return __webpack_require__.e(/*! import() */ 178).then(__webpack_require__.t.bind(null, /*! ./flags/PK.js */ "../country-flags-react/dist/flags/PK.js", 7));
   },
   PL: function PL() {
-    return __webpack_require__.e(/*! import() */ 179).then(__webpack_require__.bind(null, /*! ./flags/PL.js */ "../country-flags-react/dist/flags/PL.js"));
+    return __webpack_require__.e(/*! import() */ 179).then(__webpack_require__.t.bind(null, /*! ./flags/PL.js */ "../country-flags-react/dist/flags/PL.js", 7));
   },
   PM: function PM() {
-    return __webpack_require__.e(/*! import() */ 180).then(__webpack_require__.bind(null, /*! ./flags/PM.js */ "../country-flags-react/dist/flags/PM.js"));
+    return __webpack_require__.e(/*! import() */ 180).then(__webpack_require__.t.bind(null, /*! ./flags/PM.js */ "../country-flags-react/dist/flags/PM.js", 7));
   },
   PN: function PN() {
-    return __webpack_require__.e(/*! import() */ 181).then(__webpack_require__.bind(null, /*! ./flags/PN.js */ "../country-flags-react/dist/flags/PN.js"));
+    return __webpack_require__.e(/*! import() */ 181).then(__webpack_require__.t.bind(null, /*! ./flags/PN.js */ "../country-flags-react/dist/flags/PN.js", 7));
   },
   PR: function PR() {
-    return __webpack_require__.e(/*! import() */ 182).then(__webpack_require__.bind(null, /*! ./flags/PR.js */ "../country-flags-react/dist/flags/PR.js"));
+    return __webpack_require__.e(/*! import() */ 182).then(__webpack_require__.t.bind(null, /*! ./flags/PR.js */ "../country-flags-react/dist/flags/PR.js", 7));
   },
   PS: function PS() {
-    return __webpack_require__.e(/*! import() */ 183).then(__webpack_require__.bind(null, /*! ./flags/PS.js */ "../country-flags-react/dist/flags/PS.js"));
+    return __webpack_require__.e(/*! import() */ 183).then(__webpack_require__.t.bind(null, /*! ./flags/PS.js */ "../country-flags-react/dist/flags/PS.js", 7));
   },
   PT: function PT() {
-    return __webpack_require__.e(/*! import() */ 184).then(__webpack_require__.bind(null, /*! ./flags/PT.js */ "../country-flags-react/dist/flags/PT.js"));
+    return __webpack_require__.e(/*! import() */ 184).then(__webpack_require__.t.bind(null, /*! ./flags/PT.js */ "../country-flags-react/dist/flags/PT.js", 7));
   },
   PW: function PW() {
-    return __webpack_require__.e(/*! import() */ 185).then(__webpack_require__.bind(null, /*! ./flags/PW.js */ "../country-flags-react/dist/flags/PW.js"));
+    return __webpack_require__.e(/*! import() */ 185).then(__webpack_require__.t.bind(null, /*! ./flags/PW.js */ "../country-flags-react/dist/flags/PW.js", 7));
   },
   PY: function PY() {
-    return __webpack_require__.e(/*! import() */ 186).then(__webpack_require__.bind(null, /*! ./flags/PY.js */ "../country-flags-react/dist/flags/PY.js"));
+    return __webpack_require__.e(/*! import() */ 186).then(__webpack_require__.t.bind(null, /*! ./flags/PY.js */ "../country-flags-react/dist/flags/PY.js", 7));
   },
   QA: function QA() {
-    return __webpack_require__.e(/*! import() */ 187).then(__webpack_require__.bind(null, /*! ./flags/QA.js */ "../country-flags-react/dist/flags/QA.js"));
+    return __webpack_require__.e(/*! import() */ 187).then(__webpack_require__.t.bind(null, /*! ./flags/QA.js */ "../country-flags-react/dist/flags/QA.js", 7));
   },
   RE: function RE() {
-    return __webpack_require__.e(/*! import() */ 188).then(__webpack_require__.bind(null, /*! ./flags/RE.js */ "../country-flags-react/dist/flags/RE.js"));
+    return __webpack_require__.e(/*! import() */ 188).then(__webpack_require__.t.bind(null, /*! ./flags/RE.js */ "../country-flags-react/dist/flags/RE.js", 7));
   },
   RO: function RO() {
-    return __webpack_require__.e(/*! import() */ 189).then(__webpack_require__.bind(null, /*! ./flags/RO.js */ "../country-flags-react/dist/flags/RO.js"));
+    return __webpack_require__.e(/*! import() */ 189).then(__webpack_require__.t.bind(null, /*! ./flags/RO.js */ "../country-flags-react/dist/flags/RO.js", 7));
   },
   RS: function RS() {
-    return __webpack_require__.e(/*! import() */ 190).then(__webpack_require__.bind(null, /*! ./flags/RS.js */ "../country-flags-react/dist/flags/RS.js"));
+    return __webpack_require__.e(/*! import() */ 190).then(__webpack_require__.t.bind(null, /*! ./flags/RS.js */ "../country-flags-react/dist/flags/RS.js", 7));
   },
   RU: function RU() {
-    return __webpack_require__.e(/*! import() */ 191).then(__webpack_require__.bind(null, /*! ./flags/RU.js */ "../country-flags-react/dist/flags/RU.js"));
+    return __webpack_require__.e(/*! import() */ 191).then(__webpack_require__.t.bind(null, /*! ./flags/RU.js */ "../country-flags-react/dist/flags/RU.js", 7));
   },
   RW: function RW() {
-    return __webpack_require__.e(/*! import() */ 192).then(__webpack_require__.bind(null, /*! ./flags/RW.js */ "../country-flags-react/dist/flags/RW.js"));
+    return __webpack_require__.e(/*! import() */ 192).then(__webpack_require__.t.bind(null, /*! ./flags/RW.js */ "../country-flags-react/dist/flags/RW.js", 7));
   },
   SA: function SA() {
-    return __webpack_require__.e(/*! import() */ 193).then(__webpack_require__.bind(null, /*! ./flags/SA.js */ "../country-flags-react/dist/flags/SA.js"));
+    return __webpack_require__.e(/*! import() */ 193).then(__webpack_require__.t.bind(null, /*! ./flags/SA.js */ "../country-flags-react/dist/flags/SA.js", 7));
   },
   SB: function SB() {
-    return __webpack_require__.e(/*! import() */ 194).then(__webpack_require__.bind(null, /*! ./flags/SB.js */ "../country-flags-react/dist/flags/SB.js"));
+    return __webpack_require__.e(/*! import() */ 194).then(__webpack_require__.t.bind(null, /*! ./flags/SB.js */ "../country-flags-react/dist/flags/SB.js", 7));
   },
   SC: function SC() {
-    return __webpack_require__.e(/*! import() */ 195).then(__webpack_require__.bind(null, /*! ./flags/SC.js */ "../country-flags-react/dist/flags/SC.js"));
+    return __webpack_require__.e(/*! import() */ 195).then(__webpack_require__.t.bind(null, /*! ./flags/SC.js */ "../country-flags-react/dist/flags/SC.js", 7));
   },
   SD: function SD() {
-    return __webpack_require__.e(/*! import() */ 196).then(__webpack_require__.bind(null, /*! ./flags/SD.js */ "../country-flags-react/dist/flags/SD.js"));
+    return __webpack_require__.e(/*! import() */ 196).then(__webpack_require__.t.bind(null, /*! ./flags/SD.js */ "../country-flags-react/dist/flags/SD.js", 7));
   },
   SE: function SE() {
-    return __webpack_require__.e(/*! import() */ 197).then(__webpack_require__.bind(null, /*! ./flags/SE.js */ "../country-flags-react/dist/flags/SE.js"));
+    return __webpack_require__.e(/*! import() */ 197).then(__webpack_require__.t.bind(null, /*! ./flags/SE.js */ "../country-flags-react/dist/flags/SE.js", 7));
   },
   SG: function SG() {
-    return __webpack_require__.e(/*! import() */ 198).then(__webpack_require__.bind(null, /*! ./flags/SG.js */ "../country-flags-react/dist/flags/SG.js"));
+    return __webpack_require__.e(/*! import() */ 198).then(__webpack_require__.t.bind(null, /*! ./flags/SG.js */ "../country-flags-react/dist/flags/SG.js", 7));
   },
   SH: function SH() {
-    return __webpack_require__.e(/*! import() */ 199).then(__webpack_require__.bind(null, /*! ./flags/SH.js */ "../country-flags-react/dist/flags/SH.js"));
+    return __webpack_require__.e(/*! import() */ 199).then(__webpack_require__.t.bind(null, /*! ./flags/SH.js */ "../country-flags-react/dist/flags/SH.js", 7));
   },
   SI: function SI() {
-    return __webpack_require__.e(/*! import() */ 200).then(__webpack_require__.bind(null, /*! ./flags/SI.js */ "../country-flags-react/dist/flags/SI.js"));
+    return __webpack_require__.e(/*! import() */ 200).then(__webpack_require__.t.bind(null, /*! ./flags/SI.js */ "../country-flags-react/dist/flags/SI.js", 7));
   },
   SJ: function SJ() {
-    return __webpack_require__.e(/*! import() */ 201).then(__webpack_require__.bind(null, /*! ./flags/SJ.js */ "../country-flags-react/dist/flags/SJ.js"));
+    return __webpack_require__.e(/*! import() */ 201).then(__webpack_require__.t.bind(null, /*! ./flags/SJ.js */ "../country-flags-react/dist/flags/SJ.js", 7));
   },
   SK: function SK() {
-    return __webpack_require__.e(/*! import() */ 202).then(__webpack_require__.bind(null, /*! ./flags/SK.js */ "../country-flags-react/dist/flags/SK.js"));
+    return __webpack_require__.e(/*! import() */ 202).then(__webpack_require__.t.bind(null, /*! ./flags/SK.js */ "../country-flags-react/dist/flags/SK.js", 7));
   },
   SL: function SL() {
-    return __webpack_require__.e(/*! import() */ 203).then(__webpack_require__.bind(null, /*! ./flags/SL.js */ "../country-flags-react/dist/flags/SL.js"));
+    return __webpack_require__.e(/*! import() */ 203).then(__webpack_require__.t.bind(null, /*! ./flags/SL.js */ "../country-flags-react/dist/flags/SL.js", 7));
   },
   SM: function SM() {
-    return __webpack_require__.e(/*! import() */ 204).then(__webpack_require__.bind(null, /*! ./flags/SM.js */ "../country-flags-react/dist/flags/SM.js"));
+    return __webpack_require__.e(/*! import() */ 204).then(__webpack_require__.t.bind(null, /*! ./flags/SM.js */ "../country-flags-react/dist/flags/SM.js", 7));
   },
   SN: function SN() {
-    return __webpack_require__.e(/*! import() */ 205).then(__webpack_require__.bind(null, /*! ./flags/SN.js */ "../country-flags-react/dist/flags/SN.js"));
+    return __webpack_require__.e(/*! import() */ 205).then(__webpack_require__.t.bind(null, /*! ./flags/SN.js */ "../country-flags-react/dist/flags/SN.js", 7));
   },
   SO: function SO() {
-    return __webpack_require__.e(/*! import() */ 206).then(__webpack_require__.bind(null, /*! ./flags/SO.js */ "../country-flags-react/dist/flags/SO.js"));
+    return __webpack_require__.e(/*! import() */ 206).then(__webpack_require__.t.bind(null, /*! ./flags/SO.js */ "../country-flags-react/dist/flags/SO.js", 7));
   },
   SR: function SR() {
-    return __webpack_require__.e(/*! import() */ 207).then(__webpack_require__.bind(null, /*! ./flags/SR.js */ "../country-flags-react/dist/flags/SR.js"));
+    return __webpack_require__.e(/*! import() */ 207).then(__webpack_require__.t.bind(null, /*! ./flags/SR.js */ "../country-flags-react/dist/flags/SR.js", 7));
   },
   SS: function SS() {
-    return __webpack_require__.e(/*! import() */ 208).then(__webpack_require__.bind(null, /*! ./flags/SS.js */ "../country-flags-react/dist/flags/SS.js"));
+    return __webpack_require__.e(/*! import() */ 208).then(__webpack_require__.t.bind(null, /*! ./flags/SS.js */ "../country-flags-react/dist/flags/SS.js", 7));
   },
   ST: function ST() {
-    return __webpack_require__.e(/*! import() */ 209).then(__webpack_require__.bind(null, /*! ./flags/ST.js */ "../country-flags-react/dist/flags/ST.js"));
+    return __webpack_require__.e(/*! import() */ 209).then(__webpack_require__.t.bind(null, /*! ./flags/ST.js */ "../country-flags-react/dist/flags/ST.js", 7));
   },
   SV: function SV() {
-    return __webpack_require__.e(/*! import() */ 210).then(__webpack_require__.bind(null, /*! ./flags/SV.js */ "../country-flags-react/dist/flags/SV.js"));
+    return __webpack_require__.e(/*! import() */ 210).then(__webpack_require__.t.bind(null, /*! ./flags/SV.js */ "../country-flags-react/dist/flags/SV.js", 7));
   },
   SX: function SX() {
-    return __webpack_require__.e(/*! import() */ 211).then(__webpack_require__.bind(null, /*! ./flags/SX.js */ "../country-flags-react/dist/flags/SX.js"));
+    return __webpack_require__.e(/*! import() */ 211).then(__webpack_require__.t.bind(null, /*! ./flags/SX.js */ "../country-flags-react/dist/flags/SX.js", 7));
   },
   SY: function SY() {
-    return __webpack_require__.e(/*! import() */ 212).then(__webpack_require__.bind(null, /*! ./flags/SY.js */ "../country-flags-react/dist/flags/SY.js"));
+    return __webpack_require__.e(/*! import() */ 212).then(__webpack_require__.t.bind(null, /*! ./flags/SY.js */ "../country-flags-react/dist/flags/SY.js", 7));
   },
   SZ: function SZ() {
-    return __webpack_require__.e(/*! import() */ 213).then(__webpack_require__.bind(null, /*! ./flags/SZ.js */ "../country-flags-react/dist/flags/SZ.js"));
+    return __webpack_require__.e(/*! import() */ 213).then(__webpack_require__.t.bind(null, /*! ./flags/SZ.js */ "../country-flags-react/dist/flags/SZ.js", 7));
   },
   TC: function TC() {
-    return __webpack_require__.e(/*! import() */ 214).then(__webpack_require__.bind(null, /*! ./flags/TC.js */ "../country-flags-react/dist/flags/TC.js"));
+    return __webpack_require__.e(/*! import() */ 214).then(__webpack_require__.t.bind(null, /*! ./flags/TC.js */ "../country-flags-react/dist/flags/TC.js", 7));
   },
   TD: function TD() {
-    return __webpack_require__.e(/*! import() */ 215).then(__webpack_require__.bind(null, /*! ./flags/TD.js */ "../country-flags-react/dist/flags/TD.js"));
+    return __webpack_require__.e(/*! import() */ 215).then(__webpack_require__.t.bind(null, /*! ./flags/TD.js */ "../country-flags-react/dist/flags/TD.js", 7));
   },
   TF: function TF() {
-    return __webpack_require__.e(/*! import() */ 216).then(__webpack_require__.bind(null, /*! ./flags/TF.js */ "../country-flags-react/dist/flags/TF.js"));
+    return __webpack_require__.e(/*! import() */ 216).then(__webpack_require__.t.bind(null, /*! ./flags/TF.js */ "../country-flags-react/dist/flags/TF.js", 7));
   },
   TG: function TG() {
-    return __webpack_require__.e(/*! import() */ 217).then(__webpack_require__.bind(null, /*! ./flags/TG.js */ "../country-flags-react/dist/flags/TG.js"));
+    return __webpack_require__.e(/*! import() */ 217).then(__webpack_require__.t.bind(null, /*! ./flags/TG.js */ "../country-flags-react/dist/flags/TG.js", 7));
   },
   TH: function TH() {
-    return __webpack_require__.e(/*! import() */ 218).then(__webpack_require__.bind(null, /*! ./flags/TH.js */ "../country-flags-react/dist/flags/TH.js"));
+    return __webpack_require__.e(/*! import() */ 218).then(__webpack_require__.t.bind(null, /*! ./flags/TH.js */ "../country-flags-react/dist/flags/TH.js", 7));
   },
   TJ: function TJ() {
-    return __webpack_require__.e(/*! import() */ 219).then(__webpack_require__.bind(null, /*! ./flags/TJ.js */ "../country-flags-react/dist/flags/TJ.js"));
+    return __webpack_require__.e(/*! import() */ 219).then(__webpack_require__.t.bind(null, /*! ./flags/TJ.js */ "../country-flags-react/dist/flags/TJ.js", 7));
   },
   TK: function TK() {
-    return __webpack_require__.e(/*! import() */ 220).then(__webpack_require__.bind(null, /*! ./flags/TK.js */ "../country-flags-react/dist/flags/TK.js"));
+    return __webpack_require__.e(/*! import() */ 220).then(__webpack_require__.t.bind(null, /*! ./flags/TK.js */ "../country-flags-react/dist/flags/TK.js", 7));
   },
   TL: function TL() {
-    return __webpack_require__.e(/*! import() */ 221).then(__webpack_require__.bind(null, /*! ./flags/TL.js */ "../country-flags-react/dist/flags/TL.js"));
+    return __webpack_require__.e(/*! import() */ 221).then(__webpack_require__.t.bind(null, /*! ./flags/TL.js */ "../country-flags-react/dist/flags/TL.js", 7));
   },
   TM: function TM() {
-    return __webpack_require__.e(/*! import() */ 222).then(__webpack_require__.bind(null, /*! ./flags/TM.js */ "../country-flags-react/dist/flags/TM.js"));
+    return __webpack_require__.e(/*! import() */ 222).then(__webpack_require__.t.bind(null, /*! ./flags/TM.js */ "../country-flags-react/dist/flags/TM.js", 7));
   },
   TN: function TN() {
-    return __webpack_require__.e(/*! import() */ 223).then(__webpack_require__.bind(null, /*! ./flags/TN.js */ "../country-flags-react/dist/flags/TN.js"));
+    return __webpack_require__.e(/*! import() */ 223).then(__webpack_require__.t.bind(null, /*! ./flags/TN.js */ "../country-flags-react/dist/flags/TN.js", 7));
   },
   TO: function TO() {
-    return __webpack_require__.e(/*! import() */ 224).then(__webpack_require__.bind(null, /*! ./flags/TO.js */ "../country-flags-react/dist/flags/TO.js"));
+    return __webpack_require__.e(/*! import() */ 224).then(__webpack_require__.t.bind(null, /*! ./flags/TO.js */ "../country-flags-react/dist/flags/TO.js", 7));
   },
   TR: function TR() {
-    return __webpack_require__.e(/*! import() */ 225).then(__webpack_require__.bind(null, /*! ./flags/TR.js */ "../country-flags-react/dist/flags/TR.js"));
+    return __webpack_require__.e(/*! import() */ 225).then(__webpack_require__.t.bind(null, /*! ./flags/TR.js */ "../country-flags-react/dist/flags/TR.js", 7));
   },
   TT: function TT() {
-    return __webpack_require__.e(/*! import() */ 226).then(__webpack_require__.bind(null, /*! ./flags/TT.js */ "../country-flags-react/dist/flags/TT.js"));
+    return __webpack_require__.e(/*! import() */ 226).then(__webpack_require__.t.bind(null, /*! ./flags/TT.js */ "../country-flags-react/dist/flags/TT.js", 7));
   },
   TV: function TV() {
-    return __webpack_require__.e(/*! import() */ 227).then(__webpack_require__.bind(null, /*! ./flags/TV.js */ "../country-flags-react/dist/flags/TV.js"));
+    return __webpack_require__.e(/*! import() */ 227).then(__webpack_require__.t.bind(null, /*! ./flags/TV.js */ "../country-flags-react/dist/flags/TV.js", 7));
   },
   TW: function TW() {
-    return __webpack_require__.e(/*! import() */ 228).then(__webpack_require__.bind(null, /*! ./flags/TW.js */ "../country-flags-react/dist/flags/TW.js"));
+    return __webpack_require__.e(/*! import() */ 228).then(__webpack_require__.t.bind(null, /*! ./flags/TW.js */ "../country-flags-react/dist/flags/TW.js", 7));
   },
   TZ: function TZ() {
-    return __webpack_require__.e(/*! import() */ 229).then(__webpack_require__.bind(null, /*! ./flags/TZ.js */ "../country-flags-react/dist/flags/TZ.js"));
+    return __webpack_require__.e(/*! import() */ 229).then(__webpack_require__.t.bind(null, /*! ./flags/TZ.js */ "../country-flags-react/dist/flags/TZ.js", 7));
   },
   UA: function UA() {
-    return __webpack_require__.e(/*! import() */ 230).then(__webpack_require__.bind(null, /*! ./flags/UA.js */ "../country-flags-react/dist/flags/UA.js"));
+    return __webpack_require__.e(/*! import() */ 230).then(__webpack_require__.t.bind(null, /*! ./flags/UA.js */ "../country-flags-react/dist/flags/UA.js", 7));
   },
   UG: function UG() {
-    return __webpack_require__.e(/*! import() */ 231).then(__webpack_require__.bind(null, /*! ./flags/UG.js */ "../country-flags-react/dist/flags/UG.js"));
+    return __webpack_require__.e(/*! import() */ 231).then(__webpack_require__.t.bind(null, /*! ./flags/UG.js */ "../country-flags-react/dist/flags/UG.js", 7));
   },
   UM: function UM() {
-    return __webpack_require__.e(/*! import() */ 232).then(__webpack_require__.bind(null, /*! ./flags/UM.js */ "../country-flags-react/dist/flags/UM.js"));
+    return __webpack_require__.e(/*! import() */ 232).then(__webpack_require__.t.bind(null, /*! ./flags/UM.js */ "../country-flags-react/dist/flags/UM.js", 7));
   },
   UN: function UN() {
-    return __webpack_require__.e(/*! import() */ 233).then(__webpack_require__.bind(null, /*! ./flags/UN.js */ "../country-flags-react/dist/flags/UN.js"));
+    return __webpack_require__.e(/*! import() */ 233).then(__webpack_require__.t.bind(null, /*! ./flags/UN.js */ "../country-flags-react/dist/flags/UN.js", 7));
   },
   US: function US() {
-    return __webpack_require__.e(/*! import() */ 234).then(__webpack_require__.bind(null, /*! ./flags/US.js */ "../country-flags-react/dist/flags/US.js"));
+    return __webpack_require__.e(/*! import() */ 234).then(__webpack_require__.t.bind(null, /*! ./flags/US.js */ "../country-flags-react/dist/flags/US.js", 7));
   },
   UY: function UY() {
-    return __webpack_require__.e(/*! import() */ 235).then(__webpack_require__.bind(null, /*! ./flags/UY.js */ "../country-flags-react/dist/flags/UY.js"));
+    return __webpack_require__.e(/*! import() */ 235).then(__webpack_require__.t.bind(null, /*! ./flags/UY.js */ "../country-flags-react/dist/flags/UY.js", 7));
   },
   UZ: function UZ() {
-    return __webpack_require__.e(/*! import() */ 236).then(__webpack_require__.bind(null, /*! ./flags/UZ.js */ "../country-flags-react/dist/flags/UZ.js"));
+    return __webpack_require__.e(/*! import() */ 236).then(__webpack_require__.t.bind(null, /*! ./flags/UZ.js */ "../country-flags-react/dist/flags/UZ.js", 7));
   },
   VA: function VA() {
-    return __webpack_require__.e(/*! import() */ 237).then(__webpack_require__.bind(null, /*! ./flags/VA.js */ "../country-flags-react/dist/flags/VA.js"));
+    return __webpack_require__.e(/*! import() */ 237).then(__webpack_require__.t.bind(null, /*! ./flags/VA.js */ "../country-flags-react/dist/flags/VA.js", 7));
   },
   VC: function VC() {
-    return __webpack_require__.e(/*! import() */ 238).then(__webpack_require__.bind(null, /*! ./flags/VC.js */ "../country-flags-react/dist/flags/VC.js"));
+    return __webpack_require__.e(/*! import() */ 238).then(__webpack_require__.t.bind(null, /*! ./flags/VC.js */ "../country-flags-react/dist/flags/VC.js", 7));
   },
   VE: function VE() {
-    return __webpack_require__.e(/*! import() */ 239).then(__webpack_require__.bind(null, /*! ./flags/VE.js */ "../country-flags-react/dist/flags/VE.js"));
+    return __webpack_require__.e(/*! import() */ 239).then(__webpack_require__.t.bind(null, /*! ./flags/VE.js */ "../country-flags-react/dist/flags/VE.js", 7));
   },
   VG: function VG() {
-    return __webpack_require__.e(/*! import() */ 240).then(__webpack_require__.bind(null, /*! ./flags/VG.js */ "../country-flags-react/dist/flags/VG.js"));
+    return __webpack_require__.e(/*! import() */ 240).then(__webpack_require__.t.bind(null, /*! ./flags/VG.js */ "../country-flags-react/dist/flags/VG.js", 7));
   },
   VI: function VI() {
-    return __webpack_require__.e(/*! import() */ 241).then(__webpack_require__.bind(null, /*! ./flags/VI.js */ "../country-flags-react/dist/flags/VI.js"));
+    return __webpack_require__.e(/*! import() */ 241).then(__webpack_require__.t.bind(null, /*! ./flags/VI.js */ "../country-flags-react/dist/flags/VI.js", 7));
   },
   VN: function VN() {
-    return __webpack_require__.e(/*! import() */ 242).then(__webpack_require__.bind(null, /*! ./flags/VN.js */ "../country-flags-react/dist/flags/VN.js"));
+    return __webpack_require__.e(/*! import() */ 242).then(__webpack_require__.t.bind(null, /*! ./flags/VN.js */ "../country-flags-react/dist/flags/VN.js", 7));
   },
   VU: function VU() {
-    return __webpack_require__.e(/*! import() */ 243).then(__webpack_require__.bind(null, /*! ./flags/VU.js */ "../country-flags-react/dist/flags/VU.js"));
+    return __webpack_require__.e(/*! import() */ 243).then(__webpack_require__.t.bind(null, /*! ./flags/VU.js */ "../country-flags-react/dist/flags/VU.js", 7));
   },
   WF: function WF() {
-    return __webpack_require__.e(/*! import() */ 244).then(__webpack_require__.bind(null, /*! ./flags/WF.js */ "../country-flags-react/dist/flags/WF.js"));
+    return __webpack_require__.e(/*! import() */ 244).then(__webpack_require__.t.bind(null, /*! ./flags/WF.js */ "../country-flags-react/dist/flags/WF.js", 7));
   },
   WS: function WS() {
-    return __webpack_require__.e(/*! import() */ 245).then(__webpack_require__.bind(null, /*! ./flags/WS.js */ "../country-flags-react/dist/flags/WS.js"));
+    return __webpack_require__.e(/*! import() */ 245).then(__webpack_require__.t.bind(null, /*! ./flags/WS.js */ "../country-flags-react/dist/flags/WS.js", 7));
   },
   XK: function XK() {
-    return __webpack_require__.e(/*! import() */ 246).then(__webpack_require__.bind(null, /*! ./flags/XK.js */ "../country-flags-react/dist/flags/XK.js"));
+    return __webpack_require__.e(/*! import() */ 246).then(__webpack_require__.t.bind(null, /*! ./flags/XK.js */ "../country-flags-react/dist/flags/XK.js", 7));
   },
   YE: function YE() {
-    return __webpack_require__.e(/*! import() */ 247).then(__webpack_require__.bind(null, /*! ./flags/YE.js */ "../country-flags-react/dist/flags/YE.js"));
+    return __webpack_require__.e(/*! import() */ 247).then(__webpack_require__.t.bind(null, /*! ./flags/YE.js */ "../country-flags-react/dist/flags/YE.js", 7));
   },
   YT: function YT() {
-    return __webpack_require__.e(/*! import() */ 248).then(__webpack_require__.bind(null, /*! ./flags/YT.js */ "../country-flags-react/dist/flags/YT.js"));
+    return __webpack_require__.e(/*! import() */ 248).then(__webpack_require__.t.bind(null, /*! ./flags/YT.js */ "../country-flags-react/dist/flags/YT.js", 7));
   },
   ZA: function ZA() {
-    return __webpack_require__.e(/*! import() */ 249).then(__webpack_require__.bind(null, /*! ./flags/ZA.js */ "../country-flags-react/dist/flags/ZA.js"));
+    return __webpack_require__.e(/*! import() */ 249).then(__webpack_require__.t.bind(null, /*! ./flags/ZA.js */ "../country-flags-react/dist/flags/ZA.js", 7));
   },
   ZM: function ZM() {
-    return __webpack_require__.e(/*! import() */ 250).then(__webpack_require__.bind(null, /*! ./flags/ZM.js */ "../country-flags-react/dist/flags/ZM.js"));
+    return __webpack_require__.e(/*! import() */ 250).then(__webpack_require__.t.bind(null, /*! ./flags/ZM.js */ "../country-flags-react/dist/flags/ZM.js", 7));
   },
   ZW: function ZW() {
-    return __webpack_require__.e(/*! import() */ 251).then(__webpack_require__.bind(null, /*! ./flags/ZW.js */ "../country-flags-react/dist/flags/ZW.js"));
+    return __webpack_require__.e(/*! import() */ 251).then(__webpack_require__.t.bind(null, /*! ./flags/ZW.js */ "../country-flags-react/dist/flags/ZW.js", 7));
   }
 };
 
@@ -29885,13 +30003,13 @@ var Flag = function Flag(props) {
     fallback = props.fallback;
   var upperCountryCode = countryCode.toUpperCase();
 
-  var _React$useState = react__WEBPACK_IMPORTED_MODULE_1__["useState"](null),
-    _React$useState2 = _babel_runtime_helpers_slicedToArray__WEBPACK_IMPORTED_MODULE_0___default()(_React$useState, 2),
+  var _React$useState = React.useState(null),
+    _React$useState2 = (0, _slicedToArray2.default)(_React$useState, 2),
     CountryFlag = _React$useState2[0],
     setCountryFlag = _React$useState2[1];
 
   var invalidCountry = countryCodes.indexOf(upperCountryCode) === -1;
-  react__WEBPACK_IMPORTED_MODULE_1__["useEffect"](
+  React.useEffect(
     function () {
       if (!invalidCountry) {
         countryCodeFns[upperCountryCode]().then(function (flag) {
@@ -29909,16 +30027,16 @@ var Flag = function Flag(props) {
   }
 
   if (size) {
-    return /*#__PURE__*/ react__WEBPACK_IMPORTED_MODULE_1__["createElement"](CountryFlag, {
+    return /*#__PURE__*/ React.createElement(CountryFlag, {
       height: size,
       width: size
     });
   }
 
-  return /*#__PURE__*/ react__WEBPACK_IMPORTED_MODULE_1__["createElement"](CountryFlag, null);
+  return /*#__PURE__*/ React.createElement(CountryFlag, null);
 };
 
-
+exports.Flag = Flag;
 
 
 /***/ }),
@@ -29937,6 +30055,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react_dom__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-dom */ "../../node_modules/react-dom/index.js");
 /* harmony import */ var react_dom__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react_dom__WEBPACK_IMPORTED_MODULE_1__);
 /* harmony import */ var country_flags_react__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! country-flags-react */ "../country-flags-react/dist/index.js");
+/* harmony import */ var country_flags_react__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(country_flags_react__WEBPACK_IMPORTED_MODULE_2__);
 
 
 
